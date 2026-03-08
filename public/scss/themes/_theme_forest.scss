@@ -1,0 +1,36 @@
+/* =============================
+   Theme: Forest
+   Usage: <html data-theme="forest">
+   ============================= */
+
+:root[data-theme='forest'] {
+   --header-scroll: rgba(0, 0, 0, 0.2);
+   --nav-text: #fff;
+   --nav-scroll: #fff;
+   --nav-hover: #000;
+   --site-title: #fff;
+
+   --main-color1: #0e541d;
+   --main-color2: #f1f8e9;
+   --title-color1:#fff;
+   --title-color2:#0e541d;
+   --font-color1: #fff;
+   --font-color2: #000;
+
+   --skill-box: #fff;
+   --skill-career-badge-background: #c8e6c9;
+   --skill-career-badge: #000;
+   --skill-bar: #eee;
+   
+   --skill-10: #e0f7ec;
+   --skill-20: #b2eedb;
+   --skill-30: #80e5c9;
+   --skill-40: #4edcb8;
+   --skill-50: #26caa3;
+   --skill-60: #1cb792;
+   --skill-70: #16a383;
+   --skill-80: #119075;
+   --skill-90: #0b7c66;
+   --skill-100: #066957;
+   --skill-base: #4edcb8;
+   }

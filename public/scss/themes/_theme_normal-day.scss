@@ -1,0 +1,35 @@
+/* =============================
+   Theme: Normal (Day)
+   Usage: <html data-theme="normal">
+   ============================= */
+
+:root[data-theme='normal-day'] {
+   --header-scroll: rgba(0, 0, 0, 0.2);
+   --nav-text: #fff;
+   --nav-scroll: #333;
+   --nav-hover: #000;
+   --site-title: #fff;
+ 
+   --main-color1: #fff;
+   --main-color2: #f5f5f5;
+   --title-color1:#000;
+   --title-color2:#000;
+   --font-color1: #000;
+   --font-color2: #000;
+   --skill-box: #fff;
+   --skill-career-badge-background: #b3e5fc;
+   --skill-career-badge: #000;
+   --skill-bar: #eee;
+ 
+   --skill-10: #e3f2fd;
+   --skill-20: #bbdefb;
+   --skill-30: #90caf9;
+   --skill-40: #64b5f6;
+   --skill-50: #42a5f5;
+   --skill-60: #2196f3;
+   --skill-70: #1e88e5;
+   --skill-80: #1976d2;
+   --skill-90: #1565c0;
+   --skill-100: #0d47a1;
+   --skill-base: #64b5f6;
+}

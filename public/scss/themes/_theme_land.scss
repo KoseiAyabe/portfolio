@@ -1,0 +1,35 @@
+/* =============================
+   Theme: Land
+   Usage: <html data-theme="land">
+   ============================= */
+
+:root[data-theme='land'] {
+   --header-scroll: rgba(0, 0, 0, 0.2);
+   --nav-text: #fff;
+   --nav-scroll: #fff;
+   --nav-hover: #000;
+   --site-title: #fff;
+
+   --main-color1: #5e4d1a;
+   --main-color2: #e2d098;
+   --title-color1:#fff;
+   --title-color2:#5e4d1a;
+   --font-color1: #fff;
+   --font-color2: #000;
+   --skill-box: #fff;
+   --skill-career-badge-background: #f0f4c3;
+   --skill-career-badge: #000;
+   --skill-bar: #eee;
+   
+   --skill-10: #fce8d5;
+   --skill-20: #f8d2aa;
+   --skill-30: #f3bd80;
+   --skill-40: #efaa5c;
+   --skill-50: #e99634;
+   --skill-60: #db842c;
+   --skill-70: #c97324;
+   --skill-80: #b6621e;
+   --skill-90: #a25218;
+   --skill-100: #8d4413;
+   --skill-base: #efaa5c;
+}
