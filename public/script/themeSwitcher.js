@@ -2,15 +2,6 @@
 // Theme Switcher JS 
 // =============================
 
-/**
- * Gets the preferred theme from the OS settings.
- * @return {string} Theme key ('normal-day' or 'normal-night')
- */
-const getSystemTheme = () => {
-  const prefersDark = window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
-  return prefersDark ? 'normal-night' : 'normal-day';
-};
 
 /**
  * Applies the given theme to the document and updates background video.
@@ -48,18 +39,12 @@ const updateMainVideo = (theme) => {
 };
 
 /**
- * Initializes the theme using system setting and shows modal always.
+ * Initializes the theme with a random selection.
  */
 const initTheme = () => {
-  let systemTheme = getSystemTheme();
-
-  // systemThemeが 'normal' の場合はOSの設定に応じて切り替える
-  if (systemTheme === 'normal') {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    systemTheme = prefersDark ? 'normal-night' : 'normal-day';
-  }
-
-  applyTheme(systemTheme);
+  const themes = ['normal-day', 'normal-night', 'forest', 'ocean', 'land'];
+  const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+  applyTheme(randomTheme);
 };
 
 
@@ -74,3 +59,5 @@ themeButtons.forEach((button) => {
     applyTheme(theme);
   });
 });
+
+initTheme();

@@ -132,12 +132,13 @@ document.addEventListener('DOMContentLoaded', () => {
 // Swiper（タイムライン）初期化
 
 document.addEventListener('DOMContentLoaded', () => {
+  const isMobile = window.innerWidth < 768;
   const timelineSwiper = new Swiper('.timeline .swiper-container', {
-    direction: 'vertical',
+    direction: isMobile ? 'horizontal' : 'vertical',
     loop: false,
     speed: 1600,
     allowTouchMove: true,
-    mousewheel: true,
+    mousewheel: !isMobile,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
