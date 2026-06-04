@@ -17,72 +17,17 @@ const DEFAULT_PAGE_SIZE = 6;
 const MEDIA_PAGE_LIMIT = 5;
 const MAX_MEDIA_ITEMS = DEFAULT_PAGE_SIZE * 3;
 
-// Instagram Graph API 設定値
-const IG_GRAPH_BASE_URL = "https://graph.facebook.com";
-const IG_API_VERSION = "v24.0";
-const IG_ACCESS_TOKEN =
-  "EAAGKjPpJXPoBPy4Md7lEUXDtO73KXMgdji8AT5AprBxVnpZCsUBWb4SkwT9yttZAKHZBZCXB4lFvk8XmUEfDEoM3hIC4FlCwa4W11c4T8rfpOHSxvvU5qlgCjyFBfBrRLpMAZCQWYTHYk4icHJG6ZCHxFZBc54B5JMSmpeKpGFnxnpxM2R31yqFHIsBjPEI";
-const IG_USER_ID = "17841453675209424";
+// Cloudflare Worker プロキシ経由でInstagram APIを呼び出す
+const IG_PROXY_URL = "https://ig-proxy.kosei-find20.workers.dev";
 
-const MEDIA_FIELDS = [
-  "id",
-  "caption",
-  "media_type",
-  "media_url",
-  "permalink",
-  "thumbnail_url",
-  "timestamp",
-  "like_count",
-  "comments_count",
-  "children{id,media_type,media_url,thumbnail_url}",
-];
-
-const PROFILE_FIELDS = [
-  "biography",
-  "profile_picture_url",
-  "username",
-  "website",
-  "followers_count",
-  "follows_count",
-  "media_count",
-  "name",
-];
-
-const hasValidInstagramCredentials = () =>
-  typeof IG_ACCESS_TOKEN === "string" &&
-  !!IG_ACCESS_TOKEN &&
-  !IG_ACCESS_TOKEN.includes("REPLACE_WITH") &&
-  typeof IG_USER_ID === "string" &&
-  !!IG_USER_ID &&
-  !IG_USER_ID.includes("REPLACE_WITH");
-
-const assertInstagramCredentials = () => {
-  if (!hasValidInstagramCredentials()) {
-    throw new Error("Instagram API credentials are not configured.");
-  }
-};
-
-// 投稿一覧を取得するAPI
 const buildMediaListUrl = (nextUrl = null) => {
   if (typeof nextUrl === "string" && nextUrl) {
     return nextUrl;
   }
-
-  const url = new URL(
-    `${IG_GRAPH_BASE_URL}/${IG_API_VERSION}/${IG_USER_ID}/media`,
-  );
-  url.searchParams.set("fields", MEDIA_FIELDS.join(","));
-  url.searchParams.set("limit", String(MEDIA_PAGE_LIMIT));
-  url.searchParams.set("access_token", IG_ACCESS_TOKEN);
-  return url.toString();
+  return `${IG_PROXY_URL}/media`;
 };
 
-const buildProfileUrl = () => {
-  const url = new URL(`${IG_GRAPH_BASE_URL}/${IG_API_VERSION}/${IG_USER_ID}`);
-  url.searchParams.set("fields", PROFILE_FIELDS.join(","));
-  url.searchParams.set("access_token", IG_ACCESS_TOKEN);
-  return url.toString();
-};
+const buildProfileUrl = () => `${IG_PROXY_URL}/profile`;
 
 const resolveMediaCover = (node) => {
   if (!node || typeof node !== "object") return null;
@@ -222,8 +167,6 @@ const normalizeProfile = (payload) => {
 };
 
 async function fetchInstagramMediaItems() {
-  assertInstagramCredentials();
-
   const normalizedItems = [];
   const seenIds = new Set();
 
@@ -279,8 +222,6 @@ async function fetchInstagramMediaItems() {
 }
 
 async function fetchInstagramProfile() {
-  assertInstagramCredentials();
-
   const response = await fetch(buildProfileUrl(), { cache: "no-cache" });
   const payload = await response.json();
 
