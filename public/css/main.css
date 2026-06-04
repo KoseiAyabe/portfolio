@@ -1099,6 +1099,38 @@ TIMELINE SECTION
     border: 0; }
 
 /* ==============================
+   INSTAGRAM SECTION
+   ============================== */
+#instagram {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: var(--main-color1);
+  font-family: 'M PLUS 1p'; }
+
+.instagram-title {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--title-color1);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
+  line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem); }
+  .instagram-title::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--title-color1);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: var(--after-opacity, 0);
+    transition: opacity 0.2s ease-out; }
+
+/* ==============================
    FOOTER SECTION
    ============================== */
 #footer {
@@ -1538,7 +1570,9 @@ TIMELINE SECTION
   --skill-80: #1976d2;
   --skill-90: #1565c0;
   --skill-100: #0d47a1;
-  --skill-base: #64b5f6; }
+  --skill-base: #64b5f6;
+  --ig-slider-bg: #64b5f6;
+  --ig-slider-text: #000; }
 
 /* =============================
    Theme: Normal (Night)
@@ -1570,7 +1604,9 @@ TIMELINE SECTION
   --skill-80: #1976d2;
   --skill-90: #1565c0;
   --skill-100: #0d47a1;
-  --skill-base: #64b5f6; }
+  --skill-base: #64b5f6;
+  --ig-slider-bg: #fff;
+  --ig-slider-text: #fff; }
 
 /* =============================
    Theme: Forest
@@ -1602,7 +1638,9 @@ TIMELINE SECTION
   --skill-80: #119075;
   --skill-90: #0b7c66;
   --skill-100: #066957;
-  --skill-base: #4edcb8; }
+  --skill-base: #4edcb8;
+  --ig-slider-bg: #fff;
+  --ig-slider-text: #fff; }
 
 /* =============================
    Theme: Ocean
@@ -1634,7 +1672,9 @@ TIMELINE SECTION
   --skill-80: #1976d2;
   --skill-90: #1565c0;
   --skill-100: #0d47a1;
-  --skill-base: #64b5f6; }
+  --skill-base: #64b5f6;
+  --ig-slider-bg: #fff;
+  --ig-slider-text: #fff; }
 
 /* =============================
    Theme: Land
@@ -1650,6 +1690,8 @@ TIMELINE SECTION
   --main-color2: #e2d098;
   --title-color1:#fff;
   --title-color2:#5e4d1a;
+  --ig-slider-bg: #fff;
+  --ig-slider-text: #fff;
   --font-color1: #fff;
   --font-color2: #000;
   --skill-box: #fff;
