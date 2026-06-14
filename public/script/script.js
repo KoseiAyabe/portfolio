@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { class: 'history-title', flag: false },
     { class: 'works-title', flag: false },
     { class: 'instagram-title', flag: false },
+    { class: 'likes-preview-title', flag: false },
     { class: 'contact-title', flag: false }
   ];
   
