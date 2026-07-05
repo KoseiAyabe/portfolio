@@ -166,14 +166,14 @@
 
 .ig-profile__website {
   font-size: 14px;
-  color: #2563eb;
-  text-decoration: none;
+  color: var(--font-color1, #374151);
+  text-decoration: underline;
   word-break: break-all;
 }
 
 .ig-profile__website:hover,
 .ig-profile__website:focus {
-  text-decoration: underline;
+  color: #2563eb;
 }
 
 .ig-profile__visit-btn {
