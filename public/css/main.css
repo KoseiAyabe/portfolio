@@ -423,9 +423,9 @@ html {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease; }
-  #skill .skill-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); }
+    #skill .skill-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); }
   #skill .skill-info {
     display: flex;
     align-items: center;
@@ -447,21 +447,21 @@ html {
       width: 34px;
       height: 34px;
       object-fit: contain; }
-    #skill .skill-image.dual i,
-    #skill .skill-image.dual img,
-    #skill .skill-image.dual .skill-bg-icon {
+    #skill .skill-image.dual i, #skill .skill-image.dual img, #skill .skill-image.dual .skill-bg-icon {
       font-size: 24px;
       width: 24px;
       height: 24px; }
-  .skill-bg-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .chatgpt-skill-icon {
-    background-image: url("../images/icon/chatgpt.svg"); }
+
+.skill-bg-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.chatgpt-skill-icon {
+  background-image: url("../images/icon/chatgpt.svg"); }
 
 .skill-info .name {
   font-size: 1.2rem;
@@ -886,10 +886,12 @@ TIMELINE SECTION
     flex: 0 0 45%;
     margin-bottom: 30px; }
   #works .work-thumb {
+    display: block;
     margin-top: 20px;
     text-align: center;
     overflow: visible;
     position: relative;
+    cursor: pointer;
     transition: all 0.3s ease; }
     #works .work-thumb:hover {
       transform: scale(1.01);
@@ -909,25 +911,85 @@ TIMELINE SECTION
     font-size: clamp(1.1rem, calc(1.038rem + 0.31vw), 1.5rem);
     line-height: clamp(1.1rem, calc(1.038rem + 0.31vw), 1.5rem); }
   #works .link {
-    color: var(--font-color2); }
+    color: var(--font-color2);
+    cursor: pointer; }
     #works .link:hover {
       color: var(--main-color1);
       text-decoration: underline; }
+
 :root[data-theme='normal-day'] #works .link:hover {
   color: #1976d2; }
+
 :root[data-theme='normal-night'] #works .link:hover {
   color: #64b5f6; }
+
 :root[data-theme='normal-night'] .devicon-wordpress-plain {
   color: #21759b; }
+
 :root[data-theme='normal-night'] .devicon-nextjs-original-wordmark {
   color: #ffffff; }
+
 :root[data-theme='normal-night'] .chatgpt-skill-icon {
   background-image: url("../images/icon/chatgpt-white.svg"); }
-  #works .work-description {
-    font-size: clamp(0.9rem, calc(0.838rem + 0.31vw), 1.3rem);
-    line-height: clamp(1rem, calc(0.938rem + 0.31vw), 1.4rem);
-    margin-top: 20px;
-    color: var(--font-color2); }
+
+.work-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px; }
+
+.work-badge {
+  display: inline-block;
+  background: var(--skill-career-badge-background);
+  color: var(--skill-career-badge);
+  font-family: 'M PLUS 1p';
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 20px; }
+
+.work-modal-image {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.work-modal-title {
+  font-family: 'M PLUS 1p';
+  font-weight: bold;
+  font-size: clamp(1.3rem, calc(1.15rem + 0.75vw), 2rem);
+  line-height: 1.3;
+  color: var(--font-color2);
+  margin-top: 20px; }
+
+.work-modal-description {
+  font-family: 'M PLUS 1p';
+  font-size: clamp(0.95rem, calc(0.9rem + 0.25vw), 1.15rem);
+  line-height: 1.7;
+  margin-top: 20px;
+  color: var(--font-color2); }
+
+.work-modal-link {
+  font-family: 'M PLUS 1p';
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 28px;
+  border-radius: 30px;
+  background-color: #da3c41;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease; }
+  .work-modal-link:hover {
+    scale: 1.05; }
+
+/* work modal: scoped overrides of the modaal library's fixed spacing so it
+   doesn't waste space / collide with the close button on small screens */
+.work-modaal .modaal-container {
+  background: var(--skill-box); }
+.work-modaal .modaal-inner-wrapper {
+  padding: 70px 12px 30px; }
+.work-modaal .modaal-content-container {
+  padding: 16px; }
 
 /* ==============================
     CONTACT SECTION
@@ -1133,7 +1195,6 @@ TIMELINE SECTION
 /* ==============================
    100 THINGS SECTION
    ============================== */
-
 #hundred-things {
   width: 100%;
   padding-top: 30px;
@@ -1194,13 +1255,15 @@ TIMELINE SECTION
   animation-play-state: paused; }
 
 @keyframes hundred-things-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); } }
-
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-50%); } }
 @keyframes hundred-things-scroll-reverse {
-  0%   { transform: translateX(-50%); }
-  100% { transform: translateX(0); } }
-
+  0% {
+    transform: translateX(-50%); }
+  100% {
+    transform: translateX(0); } }
 .hundred-things-ticker-item {
   flex-shrink: 0;
   width: 240px;
@@ -1246,9 +1309,9 @@ TIMELINE SECTION
   .hundred-things-ticker-item {
     width: 160px;
     height: 160px; }
+
   .hundred-things-ticker:first-of-type {
     margin-top: 24px; } }
-
 /* ==============================
    FOOTER SECTION
    ============================== */
@@ -1357,6 +1420,11 @@ TIMELINE SECTION
     letter-spacing: -2px; }
 
   /* ========== works ========== */
+  .work-modaal .modaal-inner-wrapper {
+    padding: 70px 30px 40px; }
+  .work-modaal .modaal-content-container {
+    padding: 24px; }
+
   /* ========== contact ========== */
   .contact-title {
     letter-spacing: -2px; }
@@ -1421,6 +1489,11 @@ TIMELINE SECTION
     flex-wrap: wrap; }
   #works .work-content {
     width: 100%; }
+
+  .work-modaal .modaal-inner-wrapper {
+    padding: 80px 25px; }
+  .work-modaal .modaal-content-container {
+    padding: 30px; }
 
   /* ========== contact ========== */ }
 .custom-icon2 {
