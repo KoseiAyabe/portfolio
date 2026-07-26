@@ -610,16 +610,15 @@ async function loadIgEmbed() {
     sliderDots = document.createElement("div");
     sliderDots.className = "ig-card-slider__dots";
 
-    slider.append(sliderPrevBtn, sliderViewport, sliderNextBtn, sliderDots);
-    container.appendChild(slider);
-
     sliderCta = document.createElement("a");
     sliderCta.className = "ig-card-slider__cta";
     sliderCta.href = "https://www.instagram.com/koseiayabe/";
     sliderCta.target = "_blank";
     sliderCta.rel = "noopener noreferrer";
     sliderCta.textContent = "SEE ALL ON INSTAGRAM";
-    container.appendChild(sliderCta);
+
+    slider.append(sliderPrevBtn, sliderViewport, sliderNextBtn, sliderDots, sliderCta);
+    container.appendChild(slider);
 
     let scrollTimer = null;
     sliderTrack.addEventListener("scroll", () => {
