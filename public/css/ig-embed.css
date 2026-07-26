@@ -717,20 +717,37 @@
   }
 }
 
-/* PC以上: 縦幅を画面に収め、横幅は写真の実際の比率に追従させる */
-@media (min-width: 1024px) {
-  .ig-card-slider__item.ig-card-wrapper--card {
-    flex: 0 0 auto;
-    max-width: none;
-    width: fit-content;
-  }
+/* スライド全体(ナビ+画像+ドット)を画面の80%に収め、
+   画像は残りの高さいっぱいまで伸ばし、横幅は写真の実際の比率に追従させる
+   (PC・スマホ共通) */
+.ig-card-slider {
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
 
-  .ig-card-slider__item .ig-card--card {
-    width: fit-content;
-  }
+.ig-card-slider__viewport {
+  flex: 1 1 auto;
+  min-height: 0;
+}
 
-  .ig-media--card {
-    width: auto;
-    height: min(70vh, 640px);
-  }
+.ig-card-slider__track {
+  height: 100%;
+}
+
+.ig-card-slider__item.ig-card-wrapper--card {
+  flex: 0 0 auto;
+  max-width: none;
+  width: fit-content;
+  height: 100%;
+}
+
+.ig-card-slider__item .ig-card--card {
+  width: fit-content;
+  height: 100%;
+}
+
+.ig-media--card {
+  width: auto;
+  height: 100%;
 }
