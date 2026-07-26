@@ -716,3 +716,21 @@
     right: 8px;
   }
 }
+
+/* PC以上: 縦幅を画面に収め、横幅は写真の実際の比率に追従させる */
+@media (min-width: 1024px) {
+  .ig-card-slider__item.ig-card-wrapper--card {
+    flex: 0 0 auto;
+    max-width: none;
+    width: fit-content;
+  }
+
+  .ig-card-slider__item .ig-card--card {
+    width: fit-content;
+  }
+
+  .ig-media--card {
+    width: auto;
+    height: min(70vh, 640px);
+  }
+}
