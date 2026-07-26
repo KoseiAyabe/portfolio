@@ -552,6 +552,7 @@
   padding: 12px 12px 4px;
   margin: 0 -12px;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 .ig-card-slider__track::-webkit-scrollbar {
