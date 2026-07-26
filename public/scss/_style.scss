@@ -1170,30 +1170,16 @@ TIMELINE SECTION
   }
 
   .work-thumb {
-    display: block;
+    @extend %browser-window-frame;
     margin-top: 20px;
-    text-align: center;
-    overflow: visible;
-    position: relative;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      transform: scale(1.01);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    img {
-      width: 100%;
-      object-fit: cover;
-      object-position: left top;
-      transition: transform 0.3s ease;
-      height: auto;
-
-      &:hover {
-        transform: scale(1.01);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      }
+      transform: translateY(-4px) scale(1.01);
+      box-shadow:
+        0 20px 32px rgba(0, 0, 0, 0.24),
+        0 4px 10px rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -1252,10 +1238,54 @@ TIMELINE SECTION
   border-radius: 20px;
 }
 
-.work-modal-image {
-  width: 100%;
-  height: auto;
+%browser-window-frame {
   display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  padding-top: 28px;
+  background: linear-gradient(#f6f6f6, #e6e6e6);
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.18),
+    0 2px 6px rgba(0, 0, 0, 0.08);
+
+  /* browser window title bar */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  /* traffic-light window buttons */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ff5f57;
+    box-shadow:
+      16px 0 0 #febc2e,
+      32px 0 0 #28c840;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+    height: auto;
+  }
+}
+
+.work-modal-thumb {
+  @extend %browser-window-frame;
 }
 
 .work-modal-title {

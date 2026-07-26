@@ -1,12 +1,23 @@
-// ヘッダースクロール時の背景色切り替え
+// ヘッダースクロール時の背景色切り替え・表示/非表示切り替え
 let prevScrollPos = window.scrollY;
+const HIDE_THRESHOLD = 100; // この値未満のスクロール量では表示/非表示を切り替えない（ちらつき防止）
 window.addEventListener('scroll', () => {
   const currentScrollPos = window.scrollY;
   const header = document.getElementById('header');
+
   if (currentScrollPos > 800) {
     header.classList.add('scrolled');
   } else {
     header.classList.remove('scrolled');
+  }
+
+  if (Math.abs(currentScrollPos - prevScrollPos) > HIDE_THRESHOLD) {
+    if (currentScrollPos > prevScrollPos) {
+      header.classList.add('hidden');
+    } else {
+      header.classList.remove('hidden');
+    }
+    prevScrollPos = currentScrollPos;
   }
 });
 
