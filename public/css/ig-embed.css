@@ -679,7 +679,7 @@
 @media (max-width: 1024px) {
   .ig-card-slider {
     padding: 28px 56px 20px;
-    height: 65vh;
+    height: 45vh;
   }
 
   .ig-card-slider__item {
@@ -699,7 +699,7 @@
 
   .ig-card-slider {
     padding: 24px;
-    height: 55vh;
+    height: 32vh;
   }
 
   .ig-card-slider__track {
