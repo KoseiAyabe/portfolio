@@ -318,6 +318,7 @@ html {
   width: 100%;
   height: 90vh;
   overflow: hidden;
+  background-color: #000;
 }
 #mainvisual .main-image video {
   width: 100%;
