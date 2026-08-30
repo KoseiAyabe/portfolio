@@ -154,20 +154,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ハンバーガーメニューのクリックイベント
   hamburger.addEventListener('click', function() {
-    mobileMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
   });
 
   // モバイルメニューのリンクをクリックしたときにメニューを閉じる
   mobileNavLinks.forEach(link => {
     link.addEventListener('click', function() {
-      mobileMenu.classList.remove('active');
+      mobileMenu.classList.remove('open');
     });
   });
 
   // モード切り替えボタンのクリックイベント
   modeButtons.forEach(button => {
     button.addEventListener('click', function() {
-      mobileMenu.classList.remove('active');
+      mobileMenu.classList.remove('open');
     });
   });
 });
