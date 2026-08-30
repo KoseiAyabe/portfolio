@@ -316,12 +316,12 @@ html {
 #mainvisual {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
 #mainvisual .main-image video {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   object-fit: cover;
   filter: brightness(0.9);
   /* 暗さの度合いを調整可能 */
@@ -1540,6 +1540,12 @@ TIMELINE SECTION
 /* === タブレット以上 === */
 @media (min-width: 768px) {
   /* ========== mainvisual ========== */
+  #mainvisual {
+    height: 100vh;
+  }
+  #mainvisual .main-image video {
+    height: 100vh;
+  }
   #mainvisual .title-area {
     width: auto;
   }

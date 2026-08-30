@@ -332,12 +332,12 @@ html {
 #mainvisual {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 
   .main-image video {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     object-fit: cover;
     filter: brightness(0.9);
 
@@ -1737,6 +1737,12 @@ TIMELINE SECTION
   /* ========== mainvisual ========== */
 
   #mainvisual {
+    height: 100vh;
+
+    .main-image video {
+      height: 100vh;
+    }
+
     .title-area {
       width: auto;
     }
