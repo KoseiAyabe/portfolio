@@ -31,7 +31,7 @@ A hand-built **static site** (plain HTML / SCSS / vanilla JS, no framework, no b
 | Area | Choice |
 | --- | --- |
 | Markup | Plain HTML (no template engine) |
-| Styling | SCSS → compiled with **Ruby Sass 3.7.4**; theming via CSS custom properties |
+| Styling | SCSS → compiled with **Dart Sass** (npm `sass`); theming via CSS custom properties |
 | Scripting | Vanilla JS + jQuery 3.7.1 |
 | Slider | [Swiper](https://swiperjs.com/) (CDN) — the "History" timeline |
 | Modals | [Modaal](https://github.com/humaan/Modaal) (jQuery plugin, vendored) — image gallery + Works cards |
@@ -57,7 +57,7 @@ public/                     ← web root (deploy this)
 │   ├── modaal.css          Modaal styles (vendor)
 │   └── ig-embed.css        Instagram embed styles (vendor kit)
 ├── scss/
-│   ├── main.scss           entry: imports _style + theme partials
+│   ├── main.scss           entry: @use _style + theme partials
 │   ├── _style.scss         main stylesheet
 │   ├── modaal.scss         Modaal v0.4.4 source (vendor; not part of the build)
 │   └── themes/_theme_*.scss  5 themes (CSS-variable sets)
@@ -74,15 +74,16 @@ public/                     ← web root (deploy this)
 Serve `public/` with any static server. With VS Code Live Server the port is preset to **5501**
 (`public/.vscode/settings.json`), so open `public/index.html` via "Go Live".
 
-Recompile CSS after editing any `.scss` file:
+Build the CSS (requires Node.js):
 
 ```bash
-cd public
-sass --sourcemap=auto scss/main.scss css/main.css
+npm install          # one-time: installs Dart Sass
+npm run build:css    # compile public/scss/main.scss → public/css/main.css
+npm run watch:css    # or: recompile on change
 ```
 
-- Uses **Ruby Sass 3.7.4** (`gem install sass -v 3.7.4`, or via rbenv).
-- `css/main.css` and `css/main.css.map` are committed — regenerate and commit them together.
+- `css/main.css` and `css/main.css.map` are committed — regenerate and commit them together
+  after editing any `.scss` file.
 - `css/100.css`, `css/modaal.css`, `css/ig-embed.css` are **not** generated from SCSS; edit them directly.
 
 ### Sections
@@ -134,7 +135,7 @@ Everything below is client-side and safe to be public.
 | 領域 | 採用技術 |
 | --- | --- |
 | マークアップ | 素の HTML（テンプレートエンジンなし） |
-| スタイル | SCSS → **Ruby Sass 3.7.4** でコンパイル。テーマは CSS カスタムプロパティ |
+| スタイル | SCSS → **Dart Sass**（npm `sass`）でコンパイル。テーマは CSS カスタムプロパティ |
 | スクリプト | 素の JavaScript ＋ jQuery 3.7.1 |
 | スライダー | [Swiper](https://swiperjs.com/)（CDN） — HISTORY のタイムライン |
 | モーダル | [Modaal](https://github.com/humaan/Modaal)（jQuery プラグイン、同梱） — 画像ギャラリー＋Works カード |
@@ -160,7 +161,7 @@ public/                     ← Web ルート（ここをデプロイ）
 │   ├── modaal.css          Modaal 用スタイル（ベンダー）
 │   └── ig-embed.css        Instagram 埋め込み用（ベンダーキット）
 ├── scss/
-│   ├── main.scss           エントリ: _style とテーマ partial を import
+│   ├── main.scss           エントリ: _style とテーマ partial を @use
 │   ├── _style.scss         スタイル本体
 │   ├── modaal.scss         Modaal v0.4.4 のソース（ベンダー。ビルドには含まれない）
 │   └── themes/_theme_*.scss  5 テーマ（CSS 変数セット）
@@ -177,15 +178,15 @@ public/                     ← Web ルート（ここをデプロイ）
 `public/` を任意の静的サーバーで配信する。VS Code Live Server の場合はポートが **5501** に設定済み
 （`public/.vscode/settings.json`）なので、`public/index.html` を「Go Live」で開く。
 
-`.scss` を編集したら CSS を再コンパイルする:
+CSS のビルド（Node.js が必要）:
 
 ```bash
-cd public
-sass --sourcemap=auto scss/main.scss css/main.css
+npm install          # 初回のみ: Dart Sass を入れる
+npm run build:css    # public/scss/main.scss → public/css/main.css
+npm run watch:css    # 変更監視して自動コンパイル
 ```
 
-- **Ruby Sass 3.7.4** を使用（`gem install sass -v 3.7.4`、または rbenv 経由）。
-- `css/main.css` と `css/main.css.map` はコミット対象。再生成して一緒にコミットする。
+- `.scss` を編集したら再コンパイルし、`css/main.css` と `css/main.css.map` を一緒にコミットする。
 - `css/100.css` / `css/modaal.css` / `css/ig-embed.css` は SCSS 非経由。直接編集する。
 
 ### セクション

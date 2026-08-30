@@ -1,8 +1,9 @@
-@import 'style';
+// Dart Sass module system. @use rules must come first.
+@use 'style';
 
-// テーマのインポート
-@import 'themes/theme_normal-day';
-@import 'themes/theme_normal-night';
-@import 'themes/theme_forest';
-@import 'themes/theme_ocean';
-@import 'themes/theme_land';
+// テーマのインポート（各ファイルは :root[data-theme] の CSS 変数のみ。Sass メンバーは公開しない）
+@use 'themes/theme_normal-day';
+@use 'themes/theme_normal-night';
+@use 'themes/theme_forest';
+@use 'themes/theme_ocean';
+@use 'themes/theme_land';

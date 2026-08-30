@@ -7,5 +7,9 @@
 settings.json
 .claude/settings.local.json
 
-# Sass (Ruby Sass compile cache)
-public/.sass-cache/
+# Dependencies (Dart Sass — see package.json)
+node_modules/
+
+# SCSS build to public/css/ directory only
+public/scss/*.css
+public/scss/*.css.map

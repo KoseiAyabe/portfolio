@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site of Kosei Ayabe — static HTML / SCSS / JS",
+  "scripts": {
+    "build:css": "sass public/scss/main.scss public/css/main.css --style=expanded",
+    "watch:css": "sass --watch public/scss/main.scss:public/css/main.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.103.1"
+  }
+}
