@@ -517,6 +517,17 @@ html {
   }
 }
 
+/* Keep the note icon visible against the black profile background at night. */
+:root[data-theme='normal-night']
+  .fas_sns_circlecolor
+  a[href*='note.com'] {
+  background: #fff;
+
+  .custom-icon {
+    filter: invert(1);
+  }
+}
+
 /* ==============================
    SKILL SECTION
    ============================== */

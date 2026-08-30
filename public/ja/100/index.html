@@ -1537,34 +1537,7 @@
       <p>&copy; Kosei Ayabe</p>
     </footer>
 
-    <script>
-      // Header hide/show on scroll
-      let lastY = window.scrollY;
-      const header = document.getElementById("likes-header");
-      window.addEventListener("scroll", () => {
-        const y = window.scrollY;
-        if (y > lastY && y > 80) {
-          header.classList.add("hidden");
-        } else {
-          header.classList.remove("hidden");
-        }
-        lastY = y;
-      });
-
-      // Mobile menu toggle
-      const hamburger = document.getElementById("likes-hamburger");
-      const mobileMenu = document.getElementById("likes-mobile-menu");
-      const closeBtn = document.getElementById("likes-mobile-close");
-
-      hamburger.addEventListener("click", () =>
-        mobileMenu.classList.add("open"),
-      );
-      closeBtn.addEventListener("click", () =>
-        mobileMenu.classList.remove("open"),
-      );
-      mobileMenu.addEventListener("click", (e) => {
-        if (e.target.tagName === "A") mobileMenu.classList.remove("open");
-      });
-    </script>
+    <script src="../../script/headerScroll.js?v=20260830"></script>
+    <script src="../../script/hundred.js?v=20260830"></script>
   </body>
 </html>

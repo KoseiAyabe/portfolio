@@ -62,7 +62,9 @@ public/                     ← web root (deploy this)
 │   ├── modaal.scss         Modaal v0.4.4 source (vendor; not part of the build)
 │   └── themes/_theme_*.scss  5 themes (CSS-variable sets)
 ├── script/
-│   ├── script.js           top-page behaviour (scroll header, typing, skill bars, Swiper init, menu…)
+│   ├── headerScroll.js     shared fixed-header scroll behaviour (initHeaderScroll)
+│   ├── script.js           top-page behaviour (typing, skill bars, Swiper init, menu…)
+│   ├── hundred.js          "100 Things" page (header scroll + mobile menu)
 │   ├── themeSwitcher.js    theme switch + swaps the background video
 │   ├── ig-embed.js         Instagram fetch & render (from an external kit)
 │   └── modaal.js           Modaal library (vendor)
@@ -166,7 +168,9 @@ public/                     ← Web ルート（ここをデプロイ）
 │   ├── modaal.scss         Modaal v0.4.4 のソース（ベンダー。ビルドには含まれない）
 │   └── themes/_theme_*.scss  5 テーマ（CSS 変数セット）
 ├── script/
-│   ├── script.js           トップページの挙動（ヘッダー、タイピング、スキルバー、Swiper 初期化、メニュー…）
+│   ├── headerScroll.js     固定ヘッダーのスクロール挙動の共通関数（initHeaderScroll）
+│   ├── script.js           トップページの挙動（タイピング、スキルバー、Swiper 初期化、メニュー…）
+│   ├── hundred.js          「100 Things」ページ用（ヘッダースクロール＋モバイルメニュー）
 │   ├── themeSwitcher.js    テーマ切替＋背景動画の差し替え
 │   ├── ig-embed.js         Instagram 取得・描画（外部キット由来）
 │   └── modaal.js           Modaal 本体（ベンダー）
