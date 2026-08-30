@@ -50,32 +50,21 @@ document.addEventListener('DOMContentLoaded', () => {
 // タイトル文字のフェードアニメーション
 
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = [
-    { class: 'skill-title', flag: false },
-    { class: 'profile-title', flag: false },
-    { class: 'history-title', flag: false },
-    { class: 'works-title', flag: false },
-    { class: 'instagram-title', flag: false },
-    { class: 'hundred-things-preview-title', flag: false },
-    { class: 'contact-title', flag: false }
-  ];
-  
+  // すべてのセクション見出し（<div class="section-title"><h1 data-text="…">）を汎用取得
+  const titles = [...document.querySelectorAll('.section-title h1[data-text]')]
+    .map(el => ({ el, done: false }));
+
   document.fonts.ready.then(() => {
-    sections.forEach(s => {
-      const el = document.querySelector(`.${s.class}`);
-      if (el) el.style.opacity = 1;
-    });
+    titles.forEach(t => { t.el.style.opacity = 1; });
   });
-  
+
   const options = { threshold: 0 };
-  
-  sections.forEach(section => {
-    const el = document.querySelector(`.${section.class}`);
-    if (!el) return;
-    
+
+  titles.forEach(t => {
+    const handler = () => updateProgress(t);
+
     const titleObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        const handler = () => updateProgress(section, el);
         if (entry.isIntersecting) {
           window.addEventListener('scroll', handler);
         } else {
@@ -83,26 +72,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, options);
-    
-    titleObserver.observe(el);
+
+    titleObserver.observe(t.el);
   });
-  
-  const updateProgress = (section, el) => {
-    if (section.flag) return;
-    const rect = el.getBoundingClientRect();
+
+  const updateProgress = (t) => {
+    if (t.done) return;
+    const rect = t.el.getBoundingClientRect();
     const middle = rect.top + rect.height / 2;
     const centerY = window.innerHeight / 2;
     const range = window.innerHeight - centerY;
     const offset = middle - centerY;
-    
+
     if (middle < window.innerHeight && middle > centerY) {
       const progress = 1 - (offset / range);
-      el.style.setProperty('--after-opacity', progress);
+      t.el.style.setProperty('--after-opacity', progress);
     } else if (middle <= centerY) {
-      el.style.setProperty('--after-opacity', 1);
-      section.flag = true;
+      t.el.style.setProperty('--after-opacity', 1);
+      t.done = true;
     } else {
-      el.style.setProperty('--after-opacity', 0);
+      t.el.style.setProperty('--after-opacity', 0);
     }
   };
 });

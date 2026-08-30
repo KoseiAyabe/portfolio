@@ -158,6 +158,69 @@ html {
 }
 
 /* ==============================
+   SECTION OUTLINE TITLES
+   ============================== */
+
+/* Outlined heading that fills in on scroll.
+   Markup: <h1 class="…-title" data-text="LABEL">LABEL</h1> inside .section-title
+   --after-opacity is driven by script.js based on scroll position. */
+%section-outline-title {
+  --_fill: var(--title-color1); /* default; sections on --main-color2 override below */
+  color: transparent;
+  -webkit-text-stroke: 2px var(--_fill);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
+  line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
+
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--_fill);
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: var(--after-opacity, 0);
+    transition: opacity 0.2s ease-out;
+  }
+
+  @media (min-width: 768px) {
+    letter-spacing: -2px;
+  }
+}
+
+.profile-title,
+.skill-title,
+.works-title,
+.instagram-title,
+.contact-title,
+.history-title,
+.hundred-things-preview-title {
+  @extend %section-outline-title;
+}
+
+/* Titles that sit on the light secondary background use the second fill colour */
+.skill-title,
+.works-title,
+.hundred-things-preview-title {
+  --_fill: var(--title-color2);
+}
+
+/* Per-title spacing (unchanged) */
+.history-title {
+  margin-top: 40px;
+}
+
+.hundred-things-preview-title {
+  margin-bottom: 30px;
+}
+
+/* ==============================
    HEADER NAVIGATION
    ============================== */
 
@@ -317,35 +380,6 @@ html {
   position: sticky;
   background-color: var(--main-color1);
 
-  .profile-title {
-    color: transparent;
-    -webkit-text-stroke: 2px var(--title-color1);
-    position: relative;
-    overflow: hidden;
-
-    /* font-family: "Titillium Web", sans-serif; */
-    /* font-weight: 900; */
-    /* font-style: normal; */
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-    font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-    line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-
-    &::after {
-      content: attr(data-text);
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: var(--title-color1);
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      opacity: var(--after-opacity, 0);
-      transition: opacity 0.2s ease-out;
-    }
-  }
-
   .profile-content {
     display: block;
     align-items: center;
@@ -504,36 +538,6 @@ html {
 
   .section-title {
     margin: 0 auto 30px auto;
-  }
-
-  .skill-title {
-    color: transparent;
-    -webkit-text-stroke: 2px var(--title-color2);
-    position: relative;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-
-    /* margin-top: 5px;
-    margin-bottom: 10px; */
-
-    /* font-size: 150px; */
-    font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-    line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-
-    &::after {
-      content: attr(data-text);
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: var(--title-color2);
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      opacity: var(--after-opacity, 0);
-      transition: opacity 0.2s ease-out;
-    }
   }
 
   .skill-grid {
@@ -847,32 +851,6 @@ TIMELINE SECTION
   z-index: 2;
 }
 
-.history-title {
-  color: transparent;
-  -webkit-text-stroke: 2px var(--title-color1);
-  position: relative;
-  overflow: hidden;
-  opacity: 0.8;
-  transition: opacity 0.5s ease-out;
-  font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-  line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-  margin-top: 40px;
-
-  &::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: var(--title-color1);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    opacity: var(--after-opacity, 0);
-    transition: opacity 0.2s ease-out;
-  }
-}
-
 .history-subtitle {
   color: var(--font-color1);
   font-family: "Titillium Web", sans-serif;
@@ -1127,35 +1105,6 @@ TIMELINE SECTION
   background-color: var(--main-color2);
   font-family: 'M PLUS 1p';
 
-  .works-title {
-    color: transparent;
-    -webkit-text-stroke: 2px var(--title-color2);
-    position: relative;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-
-    /* font-family: "Titillium Web", sans-serif; */
-    /* font-weight: 900; */
-    /* font-style: normal; */
-    font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-    line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-
-    &::after {
-      content: attr(data-text);
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: var(--title-color2);
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      opacity: var(--after-opacity, 0);
-      transition: opacity 0.2s ease-out;
-    }
-  }
-
   .work-row {
     width: 100%;
     margin-top: 30px;
@@ -1347,31 +1296,6 @@ TIMELINE SECTION
   padding-top: 30px;
   padding-bottom: 20px;
   background-color: var(--main-color1);
-}
-
-.contact-title {
-  color: transparent;
-  -webkit-text-stroke: 2px var(--title-color1);
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-  line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-
-  &::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: var(--title-color1);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    opacity: var(--after-opacity, 0);
-    transition: opacity 0.2s ease-out;
-  }
 }
 
 #contact {
@@ -1585,31 +1509,6 @@ TIMELINE SECTION
   font-family: 'M PLUS 1p';
 }
 
-.instagram-title {
-  color: transparent;
-  -webkit-text-stroke: 2px var(--title-color1);
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-  line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-
-  &::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: var(--title-color1);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    opacity: var(--after-opacity, 0);
-    transition: opacity 0.2s ease-out;
-  }
-}
-
 /* ==============================
    100 THINGS SECTION
    ============================== */
@@ -1620,32 +1519,6 @@ TIMELINE SECTION
   padding-bottom: 50px;
   background-color: var(--main-color2);
   overflow: hidden;
-}
-
-.hundred-things-preview-title {
-  color: transparent;
-  -webkit-text-stroke: 2px var(--title-color2);
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  font-size: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-  line-height: clamp(3rem, calc(1.615rem + 6.92vw), 12rem);
-  margin-bottom: 30px;
-
-  &::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: var(--title-color2);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    opacity: var(--after-opacity, 0);
-    transition: opacity 0.2s ease-out;
-  }
 }
 
 .hundred-things-preview-desc {
@@ -1872,10 +1745,6 @@ TIMELINE SECTION
   /* ========== profile ========== */
 
   #profile {
-    .profile-title {
-      letter-spacing: -2px;
-    }
-
     .profile-img img {
       min-width: 500px;
     }
@@ -1887,10 +1756,6 @@ TIMELINE SECTION
   }
 
   /* ========== skill ========== */
-
-  #skill .skill-title {
-    letter-spacing: -2px;
-  }
 
   .skill-info {
     .name {
@@ -1919,9 +1784,6 @@ TIMELINE SECTION
   .timeline-section {
     height: 80vh;
   }
-  .history-title, #works .works-title {
-    letter-spacing: -2px;
-  }
   .timeline-text {
     // text-align: center;
   }
@@ -1939,11 +1801,6 @@ TIMELINE SECTION
   }
 
   /* ========== contact ========== */
-
-
-  .contact-title {
-    letter-spacing: -2px;
-  }
 
   /* フォーム装飾 */
 
