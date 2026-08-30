@@ -1,3 +1,11 @@
+# OS
 .DS_Store
+
+# Editor / local config
+.vscode/
+.idea/
 settings.json
+.claude/settings.local.json
+
+# Sass (Ruby Sass compile cache)
 public/.sass-cache/

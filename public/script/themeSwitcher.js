@@ -49,9 +49,9 @@ const initTheme = () => {
 
 
 /**
- * Sets up event listeners for both nav and modal theme selection buttons.
+ * Sets up event listeners for the nav / mobile-menu theme selection buttons.
  */
-const themeButtons = document.querySelectorAll('.mode-btn, .mode-select');
+const themeButtons = document.querySelectorAll('.mode-btn');
 
 themeButtons.forEach((button) => {
   button.addEventListener('click', () => {

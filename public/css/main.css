@@ -1543,64 +1543,6 @@ TIMELINE SECTION
   .note-icon:hover {
     background-image: url("../images/icon/note2.svg"); }
 
-/* ========== Theme Modal ========== */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; }
-
-.modal-content {
-  font-family: 'M PLUS 1p';
-  font-size: 1.4rem;
-  line-height: 1.4rem;
-  background: #fff;
-  padding: 40px 30px;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 60%;
-  width: 90%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
-
-.modal-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px; }
-
-.mode-select {
-  flex: 1 1 45%;
-  margin: 10px;
-  padding: 12px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: transform 0.2s ease; }
-  .mode-select:hover {
-    transform: scale(1.05); }
-  .mode-select.green:hover {
-    background-color: #00796b;
-    color: #fff; }
-  .mode-select.blue:hover {
-    background-color: #01579b;
-    color: #fff; }
-  .mode-select.brown:hover {
-    background-color: #5e4d1a;
-    color: #fff; }
-  .mode-select.yellow:hover {
-    background-color: #ffb300;
-    color: #fff; }
-
-.mode-name {
-  margin-left: 8px; }
-
 /* ========== Timeline Enhancements ========== */
 /* ========== Timeline 1024px+ Specific ========== */
 @media screen and (min-width: 1024px) {
@@ -1919,3 +1861,5 @@ TIMELINE SECTION
   --skill-90: #a25218;
   --skill-100: #8d4413;
   --skill-base: #efaa5c; }
+
+/*# sourceMappingURL=main.css.map */
