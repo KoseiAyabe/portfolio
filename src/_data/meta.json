@@ -1,0 +1,30 @@
+{
+  "home": {
+    "path": "/",
+    "og": true,
+    "en": {
+      "title": "Kosei Ayabe | Software Engineer | Web Development & System Engineering",
+      "description": "Portfolio of Kosei Ayabe, a software engineer based in Canada. Skilled in .NET, databases, JavaScript/TypeScript, React/Next.js, and more. Open to project inquiries and consultations.",
+      "ogTitle": "Kosei Ayabe | Software Engineer",
+      "ogDescription": "Portfolio of Kosei Ayabe, a software engineer based in Canada. Skilled in .NET, databases, JavaScript/TypeScript, React/Next.js, and more."
+    },
+    "ja": {
+      "title": "Kosei Ayabe | ソフトウェアエンジニア | Web制作・システム開発",
+      "description": "カナダを拠点に活動するソフトウェアエンジニア Kosei Ayabe(綾部甲誠) のポートフォリオサイトです。.NET / API 開発、データベース設計、JavaScript / TypeScript、React / Next.js などのスキルや制作事例を紹介。案件・相談もお気軽にどうぞ。",
+      "ogTitle": "Kosei Ayabe | ソフトウェアエンジニア",
+      "ogDescription": "カナダを拠点に活動するソフトウェアエンジニア Kosei Ayabe のポートフォリオサイトです。.NET、データベース設計、JavaScript / TypeScript、React / Next.js などのスキルを紹介。"
+    }
+  },
+  "hundred": {
+    "path": "/100/",
+    "og": false,
+    "en": {
+      "title": "100 Things | Kosei Ayabe",
+      "description": "Things I love — a collection of what makes me, me."
+    },
+    "ja": {
+      "title": "僕を形成する100のこと | Kosei Ayabe",
+      "description": "僕が好きなもの、大切にしている価値観、人生を形づくってきたもの。自分を形づくる 100 のこと。"
+    }
+  }
+}

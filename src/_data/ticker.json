@@ -1,0 +1,492 @@
+[
+  {
+    "reverse": false,
+    "items": [
+      {
+        "image": {
+          "en": "01-naruto.webp",
+          "ja": "01-naruto.webp"
+        },
+        "alt": {
+          "en": "NARUTO",
+          "ja": "NARUTO"
+        }
+      },
+      {
+        "image": {
+          "en": "04-vancouver.webp",
+          "ja": "04-vancouver.webp"
+        },
+        "alt": {
+          "en": "Vancouver",
+          "ja": "Vancouver"
+        }
+      },
+      {
+        "image": {
+          "en": "20-skateboard.webp",
+          "ja": "20-skateboard.webp"
+        },
+        "alt": {
+          "en": "Skateboarding",
+          "ja": "スケボー"
+        }
+      },
+      {
+        "image": {
+          "en": "37-dog.webp",
+          "ja": "37-dog.webp"
+        },
+        "alt": {
+          "en": "Dogs",
+          "ja": "犬"
+        }
+      },
+      {
+        "image": {
+          "en": "47-snowboard.webp",
+          "ja": "47-snowboard.webp"
+        },
+        "alt": {
+          "en": "Snowboarding",
+          "ja": "スノボー"
+        }
+      },
+      {
+        "image": {
+          "en": "56-trail.webp",
+          "ja": "56-trail.webp"
+        },
+        "alt": {
+          "en": "Hiking Trails",
+          "ja": "トレイル"
+        }
+      },
+      {
+        "image": {
+          "en": "82-surfing.webp",
+          "ja": "65-gtr.webp"
+        },
+        "alt": {
+          "en": "Surfing",
+          "ja": "GTR"
+        }
+      },
+      {
+        "image": {
+          "en": "43-workout.webp",
+          "ja": "43-workout.webp"
+        },
+        "alt": {
+          "en": "Working Out",
+          "ja": "筋トレ"
+        }
+      },
+      {
+        "image": {
+          "en": "06-twice.webp",
+          "ja": "06-twice.webp"
+        },
+        "alt": {
+          "en": "TWICE",
+          "ja": "TWICE"
+        }
+      },
+      {
+        "image": {
+          "en": "34-travel.webp",
+          "ja": "34-travel.webp"
+        },
+        "alt": {
+          "en": "Travel",
+          "ja": "海外旅行"
+        }
+      },
+      {
+        "image": {
+          "en": "08-sushi.webp",
+          "ja": "08-sushi.webp"
+        },
+        "alt": {
+          "en": "Sushi",
+          "ja": "寿司"
+        }
+      },
+      {
+        "image": {
+          "en": "29-hood.webp",
+          "ja": "29-hood.webp"
+        },
+        "alt": {
+          "en": "Hometown",
+          "ja": "地元"
+        }
+      },
+      {
+        "image": {
+          "en": "01-naruto.webp",
+          "ja": "01-naruto.webp"
+        },
+        "alt": {
+          "en": "NARUTO",
+          "ja": "NARUTO"
+        }
+      },
+      {
+        "image": {
+          "en": "04-vancouver.webp",
+          "ja": "04-vancouver.webp"
+        },
+        "alt": {
+          "en": "Vancouver",
+          "ja": "Vancouver"
+        }
+      },
+      {
+        "image": {
+          "en": "20-skateboard.webp",
+          "ja": "20-skateboard.webp"
+        },
+        "alt": {
+          "en": "Skateboarding",
+          "ja": "スケボー"
+        }
+      },
+      {
+        "image": {
+          "en": "37-dog.webp",
+          "ja": "37-dog.webp"
+        },
+        "alt": {
+          "en": "Dogs",
+          "ja": "犬"
+        }
+      },
+      {
+        "image": {
+          "en": "47-snowboard.webp",
+          "ja": "47-snowboard.webp"
+        },
+        "alt": {
+          "en": "Snowboarding",
+          "ja": "スノボー"
+        }
+      },
+      {
+        "image": {
+          "en": "56-trail.webp",
+          "ja": "56-trail.webp"
+        },
+        "alt": {
+          "en": "Hiking Trails",
+          "ja": "トレイル"
+        }
+      },
+      {
+        "image": {
+          "en": "65-gtr.webp",
+          "ja": "82-surfing.webp"
+        },
+        "alt": {
+          "en": "gtr",
+          "ja": "サーフィン"
+        }
+      },
+      {
+        "image": {
+          "en": "43-workout.webp",
+          "ja": "43-workout.webp"
+        },
+        "alt": {
+          "en": "Working Out",
+          "ja": "筋トレ"
+        }
+      },
+      {
+        "image": {
+          "en": "06-twice.webp",
+          "ja": "06-twice.webp"
+        },
+        "alt": {
+          "en": "TWICE",
+          "ja": "TWICE"
+        }
+      },
+      {
+        "image": {
+          "en": "34-travel.webp",
+          "ja": "34-travel.webp"
+        },
+        "alt": {
+          "en": "Travel",
+          "ja": "海外旅行"
+        }
+      },
+      {
+        "image": {
+          "en": "08-sushi.webp",
+          "ja": "08-sushi.webp"
+        },
+        "alt": {
+          "en": "Sushi",
+          "ja": "寿司"
+        }
+      },
+      {
+        "image": {
+          "en": "29-hood.webp",
+          "ja": "29-hood.webp"
+        },
+        "alt": {
+          "en": "Hometown",
+          "ja": "地元"
+        }
+      }
+    ]
+  },
+  {
+    "reverse": true,
+    "items": [
+      {
+        "image": {
+          "en": "05-sunset.webp",
+          "ja": "05-sunset.webp"
+        },
+        "alt": {
+          "en": "Sunset",
+          "ja": "夕焼け"
+        }
+      },
+      {
+        "image": {
+          "en": "16-onepiece.webp",
+          "ja": "16-onepiece.webp"
+        },
+        "alt": {
+          "en": "ONE PIECE",
+          "ja": "ONE PIECE"
+        }
+      },
+      {
+        "image": {
+          "en": "39-ramen.webp",
+          "ja": "39-ramen.webp"
+        },
+        "alt": {
+          "en": "Ramen",
+          "ja": "ラーメン"
+        }
+      },
+      {
+        "image": {
+          "en": "41-attackontitan.webp",
+          "ja": "41-attackontitan.webp"
+        },
+        "alt": {
+          "en": "Attack on Titan",
+          "ja": "進撃の巨人"
+        }
+      },
+      {
+        "image": {
+          "en": "26-beer.webp",
+          "ja": "26-beer.webp"
+        },
+        "alt": {
+          "en": "Beer",
+          "ja": "ビール"
+        }
+      },
+      {
+        "image": {
+          "en": "33-dragonball.webp",
+          "ja": "33-dragonball.webp"
+        },
+        "alt": {
+          "en": "Dragon Ball",
+          "ja": "Dragon Ball"
+        }
+      },
+      {
+        "image": {
+          "en": "30-ai.webp",
+          "ja": "30-ai.webp"
+        },
+        "alt": {
+          "en": "AI",
+          "ja": "AI"
+        }
+      },
+      {
+        "image": {
+          "en": "58-internationalmusic.webp",
+          "ja": "58-internationalmusic.webp"
+        },
+        "alt": {
+          "en": "Music",
+          "ja": "洋楽"
+        }
+      },
+      {
+        "image": {
+          "en": "59-kingdom.webp",
+          "ja": "59-kingdom.webp"
+        },
+        "alt": {
+          "en": "Kingdom",
+          "ja": "キングダム"
+        }
+      },
+      {
+        "image": {
+          "en": "70-drone.webp",
+          "ja": "70-drone.webp"
+        },
+        "alt": {
+          "en": "Drones",
+          "ja": "ドローン"
+        }
+      },
+      {
+        "image": {
+          "en": "71-wakeupearly.webp",
+          "ja": "71-wakeupearly.webp"
+        },
+        "alt": {
+          "en": "Waking Up Early",
+          "ja": "早起き"
+        }
+      },
+      {
+        "image": {
+          "en": "72-jojo.webp",
+          "ja": "72-jojo.webp"
+        },
+        "alt": {
+          "en": "JOJO",
+          "ja": "JOJO"
+        }
+      },
+      {
+        "image": {
+          "en": "05-sunset.webp",
+          "ja": "05-sunset.webp"
+        },
+        "alt": {
+          "en": "Sunset",
+          "ja": "夕焼け"
+        }
+      },
+      {
+        "image": {
+          "en": "16-onepiece.webp",
+          "ja": "16-onepiece.webp"
+        },
+        "alt": {
+          "en": "ONE PIECE",
+          "ja": "ONE PIECE"
+        }
+      },
+      {
+        "image": {
+          "en": "39-ramen.webp",
+          "ja": "39-ramen.webp"
+        },
+        "alt": {
+          "en": "Ramen",
+          "ja": "ラーメン"
+        }
+      },
+      {
+        "image": {
+          "en": "41-attackontitan.webp",
+          "ja": "41-attackontitan.webp"
+        },
+        "alt": {
+          "en": "Attack on Titan",
+          "ja": "進撃の巨人"
+        }
+      },
+      {
+        "image": {
+          "en": "26-beer.webp",
+          "ja": "26-beer.webp"
+        },
+        "alt": {
+          "en": "Beer",
+          "ja": "ビール"
+        }
+      },
+      {
+        "image": {
+          "en": "33-dragonball.webp",
+          "ja": "33-dragonball.webp"
+        },
+        "alt": {
+          "en": "Dragon Ball",
+          "ja": "Dragon Ball"
+        }
+      },
+      {
+        "image": {
+          "en": "30-ai.webp",
+          "ja": "30-ai.webp"
+        },
+        "alt": {
+          "en": "AI",
+          "ja": "AI"
+        }
+      },
+      {
+        "image": {
+          "en": "58-internationalmusic.webp",
+          "ja": "58-internationalmusic.webp"
+        },
+        "alt": {
+          "en": "Music",
+          "ja": "洋楽"
+        }
+      },
+      {
+        "image": {
+          "en": "59-kingdom.webp",
+          "ja": "59-kingdom.webp"
+        },
+        "alt": {
+          "en": "Kingdom",
+          "ja": "キングダム"
+        }
+      },
+      {
+        "image": {
+          "en": "70-drone.webp",
+          "ja": "70-drone.webp"
+        },
+        "alt": {
+          "en": "Drones",
+          "ja": "ドローン"
+        }
+      },
+      {
+        "image": {
+          "en": "71-wakeupearly.webp",
+          "ja": "71-wakeupearly.webp"
+        },
+        "alt": {
+          "en": "Waking Up Early",
+          "ja": "早起き"
+        }
+      },
+      {
+        "image": {
+          "en": "72-jojo.webp",
+          "ja": "72-jojo.webp"
+        },
+        "alt": {
+          "en": "JOJO",
+          "ja": "JOJO"
+        }
+      }
+    ]
+  }
+]

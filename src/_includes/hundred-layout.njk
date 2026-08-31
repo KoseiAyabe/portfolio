@@ -1,0 +1,110 @@
+{%- set t = i18n[locale] -%}
+{%- set mm = meta.hundred[locale] -%}
+{%- set home = "/ja/" if locale == "ja" else "/" -%}
+{%- set canonical = site.url + ("/ja" if locale == "ja" else "") + "/100/" -%}
+{%- set v = "?v=" + site.v -%}
+<!doctype html>
+<html lang="{{ locale }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ mm.description }}" />
+    <title>{{ mm.title }}</title>
+
+    <link rel="canonical" href="{{ canonical }}" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/images/icon/favicon-16.png" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/images/icon/favicon-32.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=M+PLUS+1p&family=Titillium+Web:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/main.css{{ v }}" />
+    <link rel="stylesheet" href="/css/100.css{{ v }}" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "{{ site.gaId }}");
+    </script>
+  </head>
+
+  <body class="likes-page">
+    <!-- Header -->
+    <header id="likes-header">
+      <nav id="likes-nav">
+        <a class="likes-back" href="{{ home }}">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>{{ t.hundred.back }}</span>
+        </a>
+        <div class="likes-nav-title">{{ t.hundred.navTitle }}</div>
+        <div class="hamburger-menu" id="likes-hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="likes-mobile-menu" id="likes-mobile-menu">
+      <button class="likes-mobile-close" id="likes-mobile-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <ul>
+        {% for item in t.hundred.mobileMenu %}
+        <li><a href="{{ home }}{{ item.suffix }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <main>
+      <!-- Intro -->
+      <section class="likes-intro">
+        <p class="likes-intro-lead">{{ t.hundred.introLead }}</p>
+        <p class="likes-intro-sub">{{ t.hundred.introSub }}</p>
+      </section>
+
+      <!-- Grid -->
+      <section class="likes-grid-section">
+        <div class="likes-grid">
+          {% for it in hundred %}
+          <div class="likes-item{{ " wide" if it.wide }}">
+            <div class="likes-figure">
+              <img src="/images/100/{{ it.image }}" alt="{{ it[locale].alt }}" />
+              <div class="likes-overlay">
+                <span class="likes-num">{{ it.label }}</span>
+                <h3 class="likes-title">{{ it[locale].title }}</h3>
+                <p class="likes-desc">{{ it[locale].desc }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="likes-footer">
+      <p>{{ t.hundred.footer | safe }}</p>
+    </footer>
+
+    <script src="/script/headerScroll.js{{ v }}"></script>
+    <script src="/script/hundred.js{{ v }}"></script>
+  </body>
+</html>

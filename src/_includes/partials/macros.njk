@@ -1,0 +1,54 @@
+{# ---- shared UI fragments (single source for nav / theme buttons / SNS) ---- #}
+
+{% macro themeSwitch(t) -%}
+<li class="mode-switch">
+  <button class="mode-btn mode-yellow" data-theme="normal-day" aria-label="{{ t.themeAria['normal-day'] }}">
+    <i class="fa-solid fa-sun"></i>
+  </button>
+  <button class="mode-btn mode-yellow" data-theme="normal-night" aria-label="{{ t.themeAria['normal-night'] }}">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+  <button class="mode-btn mode-green" data-theme="forest" aria-label="{{ t.themeAria['forest'] }}">
+    <i class="fa-solid fa-tree"></i>
+  </button>
+  <button class="mode-btn mode-blue" data-theme="ocean" aria-label="{{ t.themeAria['ocean'] }}">
+    <i class="fa-solid fa-water"></i>
+  </button>
+  <button class="mode-btn mode-brown" data-theme="land" aria-label="{{ t.themeAria['land'] }}">
+    <i class="fa-solid fa-mountain-sun"></i>
+  </button>
+</li>
+{%- endmacro %}
+
+{% macro navLinks(t) -%}
+{% for item in t.nav %}
+<li class="nav-item"><a class="navtext" href="{{ item.href }}">{{ item.label }}</a></li>
+{% endfor %}
+<li class="nav-item"><a class="navtext" href="{{ t.langToggle.href }}">{{ t.langToggle.label }}</a></li>
+{%- endmacro %}
+
+{% macro snsProfile(site, locale) -%}
+<ul class="fas_sns_circlecolor">
+  {% for s in site.sns %}
+  <li>
+    <a href="{{ s.href }}" target="_blank" rel="noopener noreferrer" aria-label="{{ s.label[locale] }}">
+      {%- if s.profileIcon -%}{{ s.profileIcon | safe }}{%- else -%}<img class="custom-icon" src="{{ s.profileImg }}" alt="{{ s.imgAlt[locale] }}" />{%- endif -%}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro snsFooter(site, locale) -%}
+<ul class="sns-icon">
+  {% for s in site.sns %}
+  <li><a href="{{ s.href }}" target="_blank" rel="noopener noreferrer" aria-label="{{ s.label[locale] }}"{% if s.footerClass %} class="{{ s.footerClass }}"{% endif %}></a></li>
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro sectionTitle(cls, text) -%}
+<div class="section-title">
+  <h1 class="{{ cls }}" data-text="{{ text }}">{{ text }}</h1>
+</div>
+{%- endmacro %}

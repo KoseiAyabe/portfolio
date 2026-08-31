@@ -5,9 +5,14 @@
   "description": "Portfolio site of Kosei Ayabe — static HTML / SCSS / JS",
   "scripts": {
     "build:css": "sass public/scss/main.scss public/css/main.css --style=expanded",
-    "watch:css": "sass --watch public/scss/main.scss:public/css/main.css --style=expanded"
+    "build:html": "eleventy",
+    "build": "npm run build:css && npm run build:html",
+    "watch:css": "sass --watch public/scss/main.scss:public/css/main.css --style=expanded",
+    "dev": "concurrently -k -n css,11ty \"npm:watch:css\" \"eleventy --serve\""
   },
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "concurrently": "^9.2.4",
     "sass": "^1.103.1"
   }
 }

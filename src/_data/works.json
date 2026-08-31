@@ -1,0 +1,62 @@
+[
+  {
+    "id": "hanahana",
+    "thumb": "hanahana-thumb.png",
+    "thumbAlt": "FLOWER SHOP HANAHANA",
+    "badges": ["HTML/CSS", "Javascript", "WordPress"],
+    "title": { "en": "FLOWER SHOP HANA*HANA", "ja": "FLOWER SHOP HANA*HANA" },
+    "url": "https://flowershop-hanahana.com/",
+    "description": {
+      "en": "This is a flower shop located in Kannami Town, Shizuoka, my hometown.<br />I was in charge of designing and developing the website from scratch using WordPress.",
+      "ja": "私の地元である静岡県函南町にあるお花屋さんです。<br />WordPressを使ってホームページ制作を１から担当させていただきました。"
+    }
+  },
+  {
+    "id": "negura",
+    "thumb": "work_negura.jpg",
+    "thumbAlt": "negura campground",
+    "badges": ["HTML/CSS", "Javascript", "WordPress", "PHP"],
+    "title": { "en": "negura campground", "ja": "negura campground" },
+    "url": "https://negura.website/",
+    "description": {
+      "en": "This is a campsite based in Kannami Town, Shizuoka, my hometown.<br />I built the entire website from scratch using WordPress.",
+      "ja": "私の地元である静岡県函南町にあるキャンプ場です。<br />WordPressを使ってホームページ制作を１から担当させていただきました。"
+    }
+  },
+  {
+    "id": "queue",
+    "thumb": "work-queue-management-demo.png",
+    "thumbAlt": "queue management demo",
+    "badges": ["HTML/CSS", "Javascript", "Firebase"],
+    "title": { "en": "Queue management system", "ja": "待ち行列管理システム" },
+    "url": "https://queue-management-e6459.web.app/",
+    "description": {
+      "en": "An app I built to replace the paper-and-pen waitlist system at a restaurant I worked at during my working holiday in Canada.<br />Built with JavaScript and Firebase, it allows staff to share queue status in real time.<br />Although it was not adopted for full operation, the app was tested in-store and received highly positive feedback from both staff and the manager.",
+      "ja": "カナダのワーキングホリデー中に働いていた飲食店で紙とペンで管理されていた待ち行列を効率化するために開発したアプリケーションです。<br />JavaScriptとFirebaseを用いて、待ち状況をスタッフ間で共有できる仕組みを構築しました。<br />本運用には至りませんでしたが、実際に店舗でテスト運用され、スタッフやマネージャーから高い評価をいただけました。"
+    }
+  },
+  {
+    "id": "ielts",
+    "thumb": "work_ieltswriting.png",
+    "thumbAlt": "IELTS Writing Lab",
+    "badges": ["TypeScript", "HTML/CSS"],
+    "title": { "en": "IELTS Writing Lab", "ja": "IELTS Writing Lab" },
+    "url": "https://ieltswritinglab.com/",
+    "description": {
+      "en": "Built from my own experience preparing for IELTS, where I felt the lack of a realistic, exam-like practice environment.<br />The app brings together everything I wanted as a test-taker: practice questions, a customizable text editor, a timer, AI-powered scoring and detailed feedback, and a spell-checker with a personal word registry.<br />Every feature was shaped by firsthand needs, with the goal of building the most complete IELTS Writing prep tool I could.",
+      "ja": "IELTSのライティング対策をしている中で、本番と同じような環境で練習できるサービスがないと感じたことをきっかけに制作しました。<br />練習問題やカスタマイズ可能なテキストエディタ、タイマー、AIを活用した高度な採点・添削機能、スペルチェックと単語登録機能など、受験者目線で欲しい機能をすべて盛り込んだアプリケーションです。<br />すべての機能が自身の受験経験から生まれており、IELTSライティングの実践的な対策ツールを目指しました。"
+    }
+  },
+  {
+    "id": "aina",
+    "thumb": "work_aina.png",
+    "thumbAlt": "Aina Yoga Pilates Studio",
+    "badges": ["WordPress", "PHP", "Javascript", "HTML/CSS"],
+    "title": { "en": "Aina - Yoga Pilates Studio", "ja": "Aina - Yoga Pilates Studio" },
+    "url": "https://aina-tsudanuma.com/",
+    "description": {
+      "en": "I developed the homepage and logo for Aina Yoga Pilates Studio in Tsudanuma, Chiba.<br />Using WordPress as the base, I created the TOP page and SERVICE page using PHP coding.<br />",
+      "ja": "千葉県津田沼市にあるヨガ・ピラティススタジオのホームページとロゴ制作をご担当させていただきました。<br />WordPressをベースにTOPページとSERVICEページはPHPでコーディングして作成しました。<br />"
+    }
+  }
+]

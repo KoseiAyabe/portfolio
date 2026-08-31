@@ -1,0 +1,322 @@
+{%- import "partials/macros.njk" as ui -%}
+{%- set t = i18n[locale] -%}
+{%- set mm = meta.home[locale] -%}
+{%- set canonical = site.url + ("/ja" if locale == "ja" else "") + "/" -%}
+{%- set hundredHref = "/ja/100/" if locale == "ja" else "/100/" -%}
+{%- set ogImage = site.url + "/images/profile.png" -%}
+{%- set v = "?v=" + site.v -%}
+<!doctype html>
+<html lang="{{ locale }}">
+  <head>
+    <!-- MetaData -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ mm.description }}" />
+    <title>{{ mm.title }}</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ canonical }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}/" />
+    <link rel="alternate" hreflang="ja" href="{{ site.url }}/ja/" />
+
+    <!-- OGP -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ canonical }}" />
+    <meta property="og:title" content="{{ mm.ogTitle }}" />
+    <meta property="og:description" content="{{ mm.ogDescription }}" />
+    <meta property="og:image" content="{{ ogImage }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ mm.ogTitle }}" />
+    <meta name="twitter:description" content="{{ mm.ogDescription }}" />
+    <meta name="twitter:image" content="{{ ogImage }}" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/images/icon/favicon-16.png" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/images/icon/favicon-32.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=M+PLUS+1p&family=Titillium+Web:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@{{ site.swiperVersion }}/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <link rel="stylesheet" href="/css/main.css{{ v }}" />
+    <link rel="stylesheet" href="/css/modaal.css{{ v }}" />
+    <link rel="stylesheet" href="/css/ig-embed.css{{ v }}" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "{{ site.gaId }}");
+  </script>
+
+  <body>
+    <!-- Header and Navigation -->
+    <header id="header">
+      <nav id="nav">
+        <div class="navbar-left">
+          <ul class="navbar">
+            {{ ui.themeSwitch(t) }}
+          </ul>
+        </div>
+
+        <div class="navbar-right">
+          <ul class="navbar">
+            {{ ui.navLinks(t) }}
+          </ul>
+        </div>
+
+        <div class="hamburger-menu" aria-label="{{ t.menuAria }}">
+          <i class="fa-solid fa-bars hamburger-icon" aria-hidden="true"></i>
+        </div>
+        <div class="mobile-menu">
+          <ul class="mobile-nav">
+            {{ ui.navLinks(t) }}
+            {{ ui.themeSwitch(t) }}
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Main Visual Section -->
+      <section id="mainvisual">
+        <div class="main-image">
+          <video
+            id="main-video"
+            src="{{ site.r2Base }}/normal.mp4"
+            type="video/mp4"
+            autoplay
+            muted
+            playsinline
+            loop
+            aria-hidden="true"
+          ></video>
+        </div>
+        <div class="title-area">
+          <h1 class="site-title">{{ t.siteTitle }}</h1>
+          <div class="sub-title">
+            <p id="typing-text"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile Section -->
+      <section id="profile">
+        {{ ui.sectionTitle("profile-title", "PROFILE") }}
+        <div class="profile-content">
+          <div class="profile-img">
+            <img id="profile-image" src="/images/profile.png" alt="{{ t.profileImgAlt }}" />
+          </div>
+          <div class="profile-text">
+            <h3 class="profile-title2">{{ t.profileName | safe }}</h3>
+            <div class="profile-description">
+              <p>{{ t.profileText | safe }}</p>
+            </div>
+            {{ ui.snsProfile(site, locale) }}
+          </div>
+        </div>
+      </section>
+
+      <!-- Skill Section -->
+      <section id="skill" class="skill-section">
+        {{ ui.sectionTitle("skill-title", "SKILL") }}
+        <div class="skill-grid">
+          {% for s in skills %}
+          <div class="skill-box">
+            <div class="skill-info">
+              <div class="{{ s.imageClass }}">{{ s.iconHtml | safe }}</div>
+              <div class="skill-name-group">
+                <span class="skill-category">{{ s.category }}</span>
+                <span class="name">{{ s.name }}</span>
+              </div>
+              <span class="career-badge">{{ s.years }}</span>
+              <span class="percent">{{ s.percent }}</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill {{ s.pctClass }}"></div>
+            </div>
+            <div class="skill-details">
+              <div class="skill-subcaption">{{ s.subcaption[locale] }}</div>
+              <p class="skill-comment">{{ s.comment[locale] | safe }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Timeline Section -->
+      <section id="timeline-section" class="timeline-section">
+        <div class="timeline">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide title-slide" data-year="start">
+                <div class="slide-content">
+                  <div class="section-title">
+                    <h1 class="history-title" data-text="{{ timeline.heading }}">{{ timeline.heading }}</h1>
+                    <h3 class="history-subtitle">{{ timeline.subtitle }}</h3>
+                  </div>
+                </div>
+              </div>
+              {% for e in timeline.entries %}
+              <div
+                class="swiper-slide"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/timeline/{{ e.image }});"
+                data-year="{{ e.year }}"
+              >
+                <div class="swiper-slide-content">
+                  <span class="timeline-year">{{ e.year }}</span>
+                  <h4 class="timeline-title">{{ e.title[locale] }}</h4>
+                  <p class="timeline-text">{{ e.text[locale] | safe }}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works Section -->
+      <section id="works">
+        {{ ui.sectionTitle("works-title", "WORKS") }}
+        <div class="container">
+          <div class="work-row">
+            {% for w in works %}
+            <div class="work-content">
+              <a class="work-thumb work-modal-trigger" href="#work-modal-{{ w.id }}">
+                <img src="/images/works/{{ w.thumb }}" alt="{{ w.thumbAlt }}" />
+              </a>
+              <div class="work-badges">
+                {% for b in w.badges %}<span class="work-badge">{{ b }}</span>{% endfor %}
+              </div>
+              <p class="work-title">
+                <a class="link work-modal-trigger" href="#work-modal-{{ w.id }}">{{ w.title[locale] }}</a>
+              </p>
+
+              <div id="work-modal-{{ w.id }}" class="work-modal" style="display: none">
+                <div class="work-modal-thumb">
+                  <img class="work-modal-image" src="/images/works/{{ w.thumb }}" alt="{{ w.thumbAlt }}" />
+                </div>
+                <h3 class="work-modal-title">{{ w.title[locale] }}</h3>
+                <div class="work-badges">
+                  {% for b in w.badges %}<span class="work-badge">{{ b }}</span>{% endfor %}
+                </div>
+                <p class="work-modal-description">{{ w.description[locale] | safe }}</p>
+                <a class="work-modal-link" href="{{ w.url }}" target="_blank" rel="noopener noreferrer">{{ t.worksVisit }}</a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery">
+        {{ ui.sectionTitle("instagram-title", "GALLERY") }}
+        <div id="ig-root">
+          <div id="ig-title"></div>
+          <div id="ig-profile"></div>
+          <div id="ig-embed"></div>
+        </div>
+      </section>
+
+      <!-- 100 Things Section -->
+      <section id="hundred-things">
+        <div class="container">
+          {{ ui.sectionTitle("hundred-things-preview-title", "100 THINGS") }}
+        </div>
+        {% for track in ticker %}
+        <div class="hundred-things-ticker">
+          <div class="hundred-things-ticker-track{{ " reverse" if track.reverse }}">
+            {% for item in track.items %}
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/{{ item.image[locale] }}" alt="{{ item.alt[locale] }}" />
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+        <p class="hundred-things-preview-desc">{{ t.hundredPreview.desc }}</p>
+        <div class="hundred-things-preview-cta">
+          <a href="{{ hundredHref }}" class="hundred-things-preview-link">{{ t.hundredPreview.cta }}</a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="container">
+          {{ ui.sectionTitle("contact-title", "CONTACT") }}
+          <div class="form-area">
+            <p>{{ t.contact.intro | safe }}</p>
+            <form action="{{ site.formspree }}" method="POST" name="comments" id="contact-form">
+              <div class="row1">
+                <div class="half-form">
+                  <input id="name" type="text" name="yourname" placeholder="" class="ef" />
+                  <label for="name">{{ t.contact.nameLabel }}</label>
+                  <span class="focus_line"></span>
+                </div>
+                <div class="half-form">
+                  <input id="mail" type="email" name="yourmail" placeholder="" class="ef" />
+                  <label for="mail">{{ t.contact.emailLabel }}</label>
+                  <span class="focus_line"></span>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="half-form2">
+                  <textarea id="comment" type="text" name="yourcomment" placeholder="" class="ef"></textarea>
+                  <label for="comment">{{ t.contact.messageLabel }}</label>
+                  <span class="focus_line"></span>
+                </div>
+              </div>
+              <div class="row3">
+                <button type="submit" class="btn"><span>{{ t.contact.submit }}</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-area">
+        {{ ui.snsFooter(site, locale) }}
+        <p class="copyright">{{ t.copyright | safe }}</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/script/ig-embed.js{{ v }}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/swiper@{{ site.swiperVersion }}/swiper-bundle.min.js"></script>
+    <script src="/script/headerScroll.js{{ v }}"></script>
+    <script src="/script/script.js{{ v }}"></script>
+    <script src="/script/themeSwitcher.js{{ v }}" defer></script>
+    <script src="/script/modaal.js{{ v }}"></script>
+    <script>
+      $(".gallery").modaal({ type: "image" });
+      $(".work-modal-trigger").modaal({
+        type: "inline",
+        custom_class: "work-modaal",
+      });
+    </script>
+  </body>
+</html>

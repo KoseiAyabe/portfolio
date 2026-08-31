@@ -1,0 +1,61 @@
+{
+  "url": "https://ayb-fixed-stars.work",
+  "v": "20260830d",
+  "gaId": "G-HEW8DMVSQ0",
+  "formspree": "https://formspree.io/f/xzznwyay",
+  "r2Base": "https://pub-5ac53b554a7a41cfa02002794e034c48.r2.dev/main",
+  "swiperVersion": "14.2.0",
+  "sns": [
+    {
+      "key": "instagram",
+      "href": "https://www.instagram.com/koseiayabe/",
+      "label": { "en": "Instagram", "ja": "Instagram" },
+      "profileIcon": "<i class=\"fa-brands fa-instagram\" aria-hidden=\"true\"></i>",
+      "footerClass": ""
+    },
+    {
+      "key": "facebook",
+      "href": "https://www.facebook.com/profile.php?id=100004384213742",
+      "label": { "en": "Facebook", "ja": "Facebook" },
+      "profileIcon": "<i class=\"fab fa-facebook-square\" aria-hidden=\"true\"></i>",
+      "footerClass": ""
+    },
+    {
+      "key": "spotify",
+      "href": "https://open.spotify.com/user/xx.ha3.busoh.sotb.xx?si=wIksSnGrT6qERklNfWdoVQ",
+      "label": { "en": "Spotify", "ja": "Spotify" },
+      "profileIcon": "<i class=\"fa-brands fa-spotify\" aria-hidden=\"true\"></i>",
+      "footerClass": ""
+    },
+    {
+      "key": "sauna",
+      "href": "https://sauna-ikitai.com/saunners/128334",
+      "label": { "en": "Sauna Ikitai", "ja": "サウナイキタイ" },
+      "imgAlt": { "en": "sauna-ikitai", "ja": "サウナイキタイ" },
+      "profileImg": "/images/icon/sauna_ikitai.svg",
+      "footerClass": "custom-icon2 sauna-icon"
+    },
+    {
+      "key": "github",
+      "href": "https://github.com/KoseiAyabe",
+      "label": { "en": "GitHub", "ja": "GitHub" },
+      "profileIcon": "<i class=\"fa-brands fa-github\" aria-hidden=\"true\"></i>",
+      "footerClass": ""
+    },
+    {
+      "key": "linkedin",
+      "href": "https://www.linkedin.com/in/kosei-ayabe-52ba112aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "label": { "en": "LinkedIn", "ja": "LinkedIn" },
+      "profileIcon": "<i class=\"fa-brands fa-linkedin\" aria-hidden=\"true\"></i>",
+      "footerClass": ""
+    },
+    {
+      "key": "note",
+      "href": "https://note.com/kosei_1031",
+      "label": { "en": "note", "ja": "note" },
+      "imgAlt": { "en": "note", "ja": "note" },
+      "profileImg": "/images/icon/note.svg",
+      "footerClass": "custom-icon2 note-icon"
+    }
+  ]
+}

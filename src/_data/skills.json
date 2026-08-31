@@ -1,0 +1,172 @@
+[
+  {
+    "imageClass": "skill-image",
+    "iconHtml": "<i class=\"devicon-csharp-plain-wordmark colored\"></i>",
+    "category": "Application Development",
+    "name": "C# / .NET",
+    "years": "5 years",
+    "percent": "90%",
+    "pctClass": "skill-90",
+    "subcaption": {
+      "en": "Application Design & Development",
+      "ja": "アプリケーション設計・開発"
+    },
+    "comment": {
+      "en": "Experienced in application development using the .NET framework.<br />Capable of designing and building a wide range of systems including front-end, back-end, and API development.",
+      "ja": ".NETを使用したアプリケーション開発が得意です。<br />フロントエンド、バックエンド・API構築など様々な形で設計、構築が可能です。"
+    }
+  },
+  {
+    "imageClass": "skill-image",
+    "iconHtml": "<i class=\"devicon-microsoftsqlserver-plain colored\"></i>",
+    "category": "Database Engineering",
+    "name": "Databases",
+    "years": "5 years",
+    "percent": "90%",
+    "pctClass": "skill-90",
+    "subcaption": {
+      "en": "Database Design & Performance Optimization",
+      "ja": "データベース設計・パフォーマンス最適化"
+    },
+    "comment": {
+      "en": "Experienced in database design, performance optimization, query development, and server operations.<br />Capable of working with multiple database technologies including relational (RDB) and NoSQL systems.<br />Able to handle all aspects of database operations.",
+      "ja": "データベース設計、パフォーマンス最適化、クエリ開発、サーバの運用等の経験があります。<br />RDBだけでなく、NoSQLを含む複数のデータベース技術を扱うことができます。<br />DB業務全般が可能です。"
+    }
+  },
+  {
+    "imageClass": "skill-image dual",
+    "iconHtml": "<i class=\"devicon-html5-plain colored\"></i>",
+    "category": "Front-End Development",
+    "name": "HTML / CSS",
+    "years": "5 years",
+    "percent": "80%",
+    "pctClass": "skill-80",
+    "subcaption": {
+      "en": "Responsive Web Interface Development",
+      "ja": "レスポンシブ Web インターフェース開発"
+    },
+    "comment": {
+      "en": "Experienced in building responsive web interfaces and translating design into functional implementations.<br />Capable of scratch development for websites and landing pages, as well as modifying existing sites.",
+      "ja": "レスポンシブなWebインターフェースの構築や、デザインを実装へ落とし込むフロントエンド開発が得意です。<br />Webサイトやランディングページのスクラッチ開発や、既存Webサイトの修正なども可能です。"
+    }
+  },
+  {
+    "imageClass": "skill-image dual",
+    "iconHtml": "<i class=\"devicon-javascript-plain colored\"></i>",
+    "category": "Full-Stack Web Development",
+    "name": "JavaScript / TypeScript",
+    "years": "3 years",
+    "percent": "70%",
+    "pctClass": "skill-70",
+    "subcaption": {
+      "en": "Interactive Web Application Development",
+      "ja": "インタラクティブな Web アプリ開発"
+    },
+    "comment": {
+      "en": "Experienced in web application development using JavaScript and TypeScript.<br />Capable of front-end feature development including API integration, data processing, and UI implementation.",
+      "ja": "JS/TSを用いたWebアプリケーション開発が得意です。<br />API連携、データ処理、UI の実装など、フロントエンド機能の開発が可能です。"
+    }
+  },
+  {
+    "imageClass": "skill-image",
+    "iconHtml": "<span class=\"skill-bg-icon chatgpt-skill-icon\"></span>",
+    "category": "AI-Assisted Development",
+    "name": "AI Tools",
+    "years": "2 years",
+    "percent": "70%",
+    "pctClass": "skill-70",
+    "subcaption": {
+      "en": "Efficient Development with AI Tools",
+      "ja": "AIツールを用いた効率的な開発"
+    },
+    "comment": {
+      "en": "Experienced in leveraging a variety of AI tools and LLMs to enable fast and accurate development.<br />An early adopter and heavy user of AI technology, I stay up to date with the rapidly evolving landscape by continuously keeping an antenna up for the latest developments.",
+      "ja": "様々なAIツールやLLMを活用して、高速で正確な開発が得意です。<br />自分で言うのもあれですが、AIに関してはかなりアーリーアダプターかつヘビーユーザだと思っています。<br />進化がとんでもなく早い分野なので、常日頃からアンテナを張り、キャッチアップを心がけています。"
+    }
+  },
+  {
+    "imageClass": "skill-image dual",
+    "iconHtml": "<i class=\"devicon-wordpress-plain colored\"></i>",
+    "category": "CMS Development",
+    "name": "WordPress / WooCommerce",
+    "years": "3 years",
+    "percent": "90%",
+    "pctClass": "skill-90",
+    "subcaption": {
+      "en": "CMS & E-Commerce Development",
+      "ja": "CMS・EC サイト開発"
+    },
+    "comment": {
+      "en": "Experienced in building and customizing websites using WordPress and WooCommerce.<br />Capable of developing custom plugins and integrating external services.",
+      "ja": "WordPressおよびWooCommerceを用いたサイト構築・カスタマイズの経験があります。<br />カスタムプラグインの開発や外部サービスとの連携も行うことができます。"
+    }
+  },
+  {
+    "imageClass": "skill-image",
+    "iconHtml": "<i class=\"devicon-amazonwebservices-plain-wordmark colored\"></i>",
+    "category": "Cloud Infrastructure & Deployment",
+    "name": "AWS / Vercel / Cloudflare",
+    "years": "2 years",
+    "percent": "60%",
+    "pctClass": "skill-60",
+    "subcaption": {
+      "en": "Cloud Deployment & Infrastructure Management",
+      "ja": "クラウドデプロイ・インフラ管理"
+    },
+    "comment": {
+      "en": "Experienced in deploying and operating applications in cloud environments using AWS, Vercel, Cloudflare, and other services.<br />Capable of evaluating appropriate tech stacks and infrastructure configurations based on system requirements, and handling everything from environment setup to operations.",
+      "ja": "AWS、Vercel、Cloudflareなどを用いたクラウド環境でのアプリケーションのデプロイおよび運用が得意です。<br />システム要件に応じて適切な技術スタックやインフラ構成を検討し、環境構築から運用まで対応することができます。"
+    }
+  },
+  {
+    "imageClass": "skill-image dual",
+    "iconHtml": "<i class=\"devicon-nextjs-original-wordmark\"></i>",
+    "category": "Modern Web Frameworks",
+    "name": "React / Next.js",
+    "years": "1 year",
+    "percent": "50%",
+    "pctClass": "skill-50",
+    "subcaption": {
+      "en": "Full-Stack Development",
+      "ja": "フルスタック開発"
+    },
+    "comment": {
+      "en": "Experienced in building modern web applications using React and Next.js.<br />Capable of component-based UI development and server-side rendering.",
+      "ja": "ReactおよびNext.jsを用いたモダンなWebアプリケーション開発の経験があります。<br />コンポーネントベースのUI開発やServerSideRenderingを利用した開発が可能です。"
+    }
+  },
+  {
+    "imageClass": "skill-image",
+    "iconHtml": "<img class=\"custom-icon\" src=\"/images/icon/supabase-logo-icon.svg\" alt=\"Supabase\" />",
+    "category": "Backend as a Service",
+    "name": "Supabase",
+    "years": "1 year",
+    "percent": "50%",
+    "pctClass": "skill-50",
+    "subcaption": {
+      "en": "BaaS & Backend Integration",
+      "ja": "BaaS・バックエンド構築"
+    },
+    "comment": {
+      "en": "Experience building backend systems using Supabase, including authentication, database management, and API integration.",
+      "ja": "Supabaseを利用したバックエンド構築の経験があります。<br />認証、データベース管理、API 連携などを実装することができます。"
+    }
+  },
+  {
+    "imageClass": "skill-image",
+    "iconHtml": "<i class=\"devicon-photoshop-plain colored\"></i>",
+    "category": "Design & Image Editing",
+    "name": "Adobe Photoshop",
+    "years": "3 years",
+    "percent": "50%",
+    "pctClass": "skill-50",
+    "subcaption": {
+      "en": "Image Editing & Visual Design",
+      "ja": "画像編集・ビジュアルデザイン"
+    },
+    "comment": {
+      "en": "Experienced in image editing, asset creation, and basic UI design support using Adobe Photoshop.",
+      "ja": "Adobe Photoshopを用いた画像編集や素材作成、簡単なUIデザイン補助の経験があります。"
+    }
+  }
+]

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <!-- MetaData -->
@@ -9,8 +9,8 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://ayb-fixed-stars.work/ja/" />
-    <link rel="alternate" hreflang="ja" href="https://ayb-fixed-stars.work/ja/" />
     <link rel="alternate" hreflang="en" href="https://ayb-fixed-stars.work/" />
+    <link rel="alternate" hreflang="ja" href="https://ayb-fixed-stars.work/ja/" />
 
     <!-- OGP -->
     <meta property="og:type" content="website" />
@@ -24,12 +24,12 @@
     <meta name="twitter:image" content="https://ayb-fixed-stars.work/images/profile.png" />
 
     <!-- Icons -->
-    <link rel="icon" href="../images/icon/favicon-16.png" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/icon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/icon/favicon-16.png">
-    <link rel="apple-touch-icon" href="../images/icon/favicon-32.png">
+    <link rel="icon" href="/images/icon/favicon-16.png" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/images/icon/favicon-32.png" />
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,30 +38,22 @@
     />
 
     <!-- Stylesheets -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@14.2.0/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link rel="stylesheet" href="../css/main.css?v=20260830d" />
-    <link rel="stylesheet" href="../css/modaal.css?v=20260830d" />
-    <link rel="stylesheet" href="../css/ig-embed.css?v=20260830d" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@14.2.0/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <link rel="stylesheet" href="/css/main.css?v=20260830d" />
+    <link rel="stylesheet" href="/css/modaal.css?v=20260830d" />
+    <link rel="stylesheet" href="/css/ig-embed.css?v=20260830d" />
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEW8DMVSQ0"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-HEW8DMVSQ0');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-HEW8DMVSQ0");
   </script>
 
   <body>
@@ -71,67 +63,43 @@
         <div class="navbar-left">
           <ul class="navbar">
             <li class="mode-switch">
-              <button
-                class="mode-btn mode-yellow"
-                data-theme="normal-day"
-                aria-label="デイモード"
-              >
-                <i class="fa-solid fa-sun"></i>
-              </button>
-              <button
-                class="mode-btn mode-yellow"
-                data-theme="normal-night"
-                aria-label="ナイトモード"
-              >
-                <i class="fa-solid fa-moon"></i>
-              </button>
-              <button
-                class="mode-btn mode-green"
-                data-theme="forest"
-                aria-label="森モード"
-              >
-                <i class="fa-solid fa-tree"></i>
-              </button>
-              <button
-                class="mode-btn mode-blue"
-                data-theme="ocean"
-                aria-label="海モード"
-              >
-                <i class="fa-solid fa-water"></i>
-              </button>
-              <button
-                class="mode-btn mode-brown"
-                data-theme="land"
-                aria-label="山モード"
-              >
-                <i class="fa-solid fa-mountain-sun"></i>
-              </button>
-            </li>
+  <button class="mode-btn mode-yellow" data-theme="normal-day" aria-label="デイモード">
+    <i class="fa-solid fa-sun"></i>
+  </button>
+  <button class="mode-btn mode-yellow" data-theme="normal-night" aria-label="ナイトモード">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+  <button class="mode-btn mode-green" data-theme="forest" aria-label="森モード">
+    <i class="fa-solid fa-tree"></i>
+  </button>
+  <button class="mode-btn mode-blue" data-theme="ocean" aria-label="海モード">
+    <i class="fa-solid fa-water"></i>
+  </button>
+  <button class="mode-btn mode-brown" data-theme="land" aria-label="山モード">
+    <i class="fa-solid fa-mountain-sun"></i>
+  </button>
+</li>
           </ul>
         </div>
 
         <div class="navbar-right">
           <ul class="navbar">
-            <li class="nav-item">
-              <a class="navtext" href="#profile">Profile</a>
-            </li>
-            <li class="nav-item"><a class="navtext" href="#skill">Skill</a></li>
-            <li class="nav-item">
-              <a class="navtext" href="#timeline-section">History</a>
-            </li>
-            <li class="nav-item"><a class="navtext" href="#works">Works</a></li>
-            <li class="nav-item">
-              <a class="navtext" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="navtext" href="#hundred-things">100 Things</a>
-            </li>
-            <li class="nav-item">
-              <a class="navtext" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="navtext" href="../">English</a>
-            </li>
+            
+<li class="nav-item"><a class="navtext" href="#profile">Profile</a></li>
+
+<li class="nav-item"><a class="navtext" href="#skill">Skill</a></li>
+
+<li class="nav-item"><a class="navtext" href="#timeline-section">History</a></li>
+
+<li class="nav-item"><a class="navtext" href="#works">Works</a></li>
+
+<li class="nav-item"><a class="navtext" href="#gallery">Gallery</a></li>
+
+<li class="nav-item"><a class="navtext" href="#hundred-things">100 Things</a></li>
+
+<li class="nav-item"><a class="navtext" href="#contact">Contact</a></li>
+
+<li class="nav-item"><a class="navtext" href="/">English</a></li>
           </ul>
         </div>
 
@@ -140,63 +108,39 @@
         </div>
         <div class="mobile-menu">
           <ul class="mobile-nav">
-            <li class="nav-item">
-              <a class="navtext" href="#profile">Profile</a>
-            </li>
-            <li class="nav-item"><a class="navtext" href="#skill">Skill</a></li>
-            <li class="nav-item">
-              <a class="navtext" href="#timeline-section">History</a>
-            </li>
-            <li class="nav-item"><a class="navtext" href="#works">Works</a></li>
-            <li class="nav-item">
-              <a class="navtext" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="navtext" href="#hundred-things">100 Things</a>
-            </li>
-            <li class="nav-item">
-              <a class="navtext" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="navtext" href="../">English</a>
-            </li>
+            
+<li class="nav-item"><a class="navtext" href="#profile">Profile</a></li>
+
+<li class="nav-item"><a class="navtext" href="#skill">Skill</a></li>
+
+<li class="nav-item"><a class="navtext" href="#timeline-section">History</a></li>
+
+<li class="nav-item"><a class="navtext" href="#works">Works</a></li>
+
+<li class="nav-item"><a class="navtext" href="#gallery">Gallery</a></li>
+
+<li class="nav-item"><a class="navtext" href="#hundred-things">100 Things</a></li>
+
+<li class="nav-item"><a class="navtext" href="#contact">Contact</a></li>
+
+<li class="nav-item"><a class="navtext" href="/">English</a></li>
             <li class="mode-switch">
-              <button
-                class="mode-btn mode-yellow"
-                data-theme="normal-day"
-                aria-label="デイモード"
-              >
-                <i class="fa-solid fa-sun"></i>
-              </button>
-              <button
-                class="mode-btn mode-yellow"
-                data-theme="normal-night"
-                aria-label="ナイトモード"
-              >
-                <i class="fa-solid fa-moon"></i>
-              </button>
-              <button
-                class="mode-btn mode-green"
-                data-theme="forest"
-                aria-label="森モード"
-              >
-                <i class="fa-solid fa-tree"></i>
-              </button>
-              <button
-                class="mode-btn mode-blue"
-                data-theme="ocean"
-                aria-label="海モード"
-              >
-                <i class="fa-solid fa-water"></i>
-              </button>
-              <button
-                class="mode-btn mode-brown"
-                data-theme="land"
-                aria-label="山モード"
-              >
-                <i class="fa-solid fa-mountain-sun"></i>
-              </button>
-            </li>
+  <button class="mode-btn mode-yellow" data-theme="normal-day" aria-label="デイモード">
+    <i class="fa-solid fa-sun"></i>
+  </button>
+  <button class="mode-btn mode-yellow" data-theme="normal-night" aria-label="ナイトモード">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+  <button class="mode-btn mode-green" data-theme="forest" aria-label="森モード">
+    <i class="fa-solid fa-tree"></i>
+  </button>
+  <button class="mode-btn mode-blue" data-theme="ocean" aria-label="海モード">
+    <i class="fa-solid fa-water"></i>
+  </button>
+  <button class="mode-btn mode-brown" data-theme="land" aria-label="山モード">
+    <i class="fa-solid fa-mountain-sun"></i>
+  </button>
+</li>
           </ul>
         </div>
       </nav>
@@ -219,7 +163,7 @@
           ></video>
         </div>
         <div class="title-area">
-          <h1 class="site-title">Hi, I'M KOSEI</h1>
+          <h1 class="site-title">Hi, I&#39;M KOSEI</h1>
           <div class="sub-title">
             <p id="typing-text"></p>
           </div>
@@ -229,104 +173,48 @@
       <!-- Profile Section -->
       <section id="profile">
         <div class="section-title">
-          <h1 class="profile-title" data-text="PROFILE">PROFILE</h1>
-        </div>
+  <h1 class="profile-title" data-text="PROFILE">PROFILE</h1>
+</div>
         <div class="profile-content">
           <div class="profile-img">
-            <img
-              id="profile-image"
-              src="../images/profile.png"
-              alt="Profile Image"
-            />
+            <img id="profile-image" src="/images/profile.png" alt="Profile Image" />
           </div>
           <div class="profile-text">
             <h3 class="profile-title2">Kosei&nbsp;Ayabe</h3>
             <div class="profile-description">
-              <p>
-                1997年、静岡県生まれ。<br />
-                現在はカナダでエンジニアとして働いています。<br />
-                大学でコンピューターサイエンスを専攻し、新卒で大手SIer企業に入社。<br />
-                入社後約2年半、SEとして業務経験を積み、2023年1月からフリーランスとして活動をスタート。<br />
-                趣味は旅行とサウナと読書、漫画とアニメです。<br />
-                スケート、サーフィン、スノーボードなど横乗りのスポーツも好きです。<br />
-                最近は英語学習、AIを使ったWebアプリケーションの制作にハマってます。
-              </p>
+              <p>1997年、静岡県生まれ。<br />現在はカナダでエンジニアとして働いています。<br />大学でコンピューターサイエンスを専攻し、新卒で大手SIer企業に入社。<br />入社後約2年半、SEとして業務経験を積み、2023年1月からフリーランスとして活動をスタート。<br />趣味は旅行とサウナと読書、漫画とアニメです。<br />スケート、サーフィン、スノーボードなど横乗りのスポーツも好きです。<br />最近は英語学習、AIを使ったWebアプリケーションの制作にハマってます。</p>
             </div>
             <ul class="fas_sns_circlecolor">
-              <li>
-                <a
-                  href="https://www.instagram.com/koseiayabe/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100004384213742"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  ><i class="fab fa-facebook-square" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://open.spotify.com/user/xx.ha3.busoh.sotb.xx?si=wIksSnGrT6qERklNfWdoVQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Spotify"
-                  ><i class="fa-brands fa-spotify" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://sauna-ikitai.com/saunners/128334"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="サウナイキタイ"
-                >
-                  <img
-                    class="custom-icon"
-                    src="../images/icon/sauna_ikitai.svg"
-                    alt="サウナイキタイ"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/KoseiAyabe"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  ><i class="fa-brands fa-github" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/kosei-ayabe-52ba112aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://note.com/kosei_1031"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="note"
-                >
-                  <img
-                    class="custom-icon"
-                    src="../images/icon/note.svg"
-                    alt="note"
-                  />
-                </a>
-              </li>
-            </ul>
+  
+  <li>
+    <a href="https://www.instagram.com/koseiayabe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+  </li>
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=100004384213742" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+  </li>
+  
+  <li>
+    <a href="https://open.spotify.com/user/xx.ha3.busoh.sotb.xx?si=wIksSnGrT6qERklNfWdoVQ" target="_blank" rel="noopener noreferrer" aria-label="Spotify"><i class="fa-brands fa-spotify" aria-hidden="true"></i></a>
+  </li>
+  
+  <li>
+    <a href="https://sauna-ikitai.com/saunners/128334" target="_blank" rel="noopener noreferrer" aria-label="サウナイキタイ"><img class="custom-icon" src="/images/icon/sauna_ikitai.svg" alt="サウナイキタイ" /></a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/KoseiAyabe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/kosei-ayabe-52ba112aa?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+  </li>
+  
+  <li>
+    <a href="https://note.com/kosei_1031" target="_blank" rel="noopener noreferrer" aria-label="note"><img class="custom-icon" src="/images/icon/note.svg" alt="note" /></a>
+  </li>
+  
+</ul>
           </div>
         </div>
       </section>
@@ -334,14 +222,13 @@
       <!-- Skill Section -->
       <section id="skill" class="skill-section">
         <div class="section-title">
-          <h1 class="skill-title" data-text="SKILL">SKILL</h1>
-        </div>
+  <h1 class="skill-title" data-text="SKILL">SKILL</h1>
+</div>
         <div class="skill-grid">
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image">
-                <i class="devicon-csharp-plain-wordmark colored"></i>
-              </div>
+              <div class="skill-image"><i class="devicon-csharp-plain-wordmark colored"></i></div>
               <div class="skill-name-group">
                 <span class="skill-category">Application Development</span>
                 <span class="name">C# / .NET</span>
@@ -354,18 +241,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">アプリケーション設計・開発</div>
-              <p class="skill-comment">
-                .NETを使用したアプリケーション開発が得意です。<br />
-                フロントエンド、バックエンド・API構築など様々な形で設計、構築が可能です。
-              </p>
+              <p class="skill-comment">.NETを使用したアプリケーション開発が得意です。<br />フロントエンド、バックエンド・API構築など様々な形で設計、構築が可能です。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image">
-                <i class="devicon-microsoftsqlserver-plain colored"></i>
-              </div>
+              <div class="skill-image"><i class="devicon-microsoftsqlserver-plain colored"></i></div>
               <div class="skill-name-group">
                 <span class="skill-category">Database Engineering</span>
                 <span class="name">Databases</span>
@@ -378,19 +260,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">データベース設計・パフォーマンス最適化</div>
-              <p class="skill-comment">
-                データベース設計、パフォーマンス最適化、クエリ開発、サーバの運用等の経験があります。<br />
-                RDBだけでなく、NoSQLを含む複数のデータベース技術を扱うことができます。<br />
-                DB業務全般が可能です。
-              </p>
+              <p class="skill-comment">データベース設計、パフォーマンス最適化、クエリ開発、サーバの運用等の経験があります。<br />RDBだけでなく、NoSQLを含む複数のデータベース技術を扱うことができます。<br />DB業務全般が可能です。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image dual">
-                <i class="devicon-html5-plain colored"></i>
-              </div>
+              <div class="skill-image dual"><i class="devicon-html5-plain colored"></i></div>
               <div class="skill-name-group">
                 <span class="skill-category">Front-End Development</span>
                 <span class="name">HTML / CSS</span>
@@ -403,18 +279,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">レスポンシブ Web インターフェース開発</div>
-              <p class="skill-comment">
-                レスポンシブなWebインターフェースの構築や、デザインを実装へ落とし込むフロントエンド開発が得意です。<br />
-                Webサイトやランディングページのスクラッチ開発や、既存Webサイトの修正なども可能です。
-              </p>
+              <p class="skill-comment">レスポンシブなWebインターフェースの構築や、デザインを実装へ落とし込むフロントエンド開発が得意です。<br />Webサイトやランディングページのスクラッチ開発や、既存Webサイトの修正なども可能です。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image dual">
-                <i class="devicon-javascript-plain colored"></i>
-              </div>
+              <div class="skill-image dual"><i class="devicon-javascript-plain colored"></i></div>
               <div class="skill-name-group">
                 <span class="skill-category">Full-Stack Web Development</span>
                 <span class="name">JavaScript / TypeScript</span>
@@ -427,18 +298,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">インタラクティブな Web アプリ開発</div>
-              <p class="skill-comment">
-                JS/TSを用いたWebアプリケーション開発が得意です。<br />
-                API連携、データ処理、UI の実装など、フロントエンド機能の開発が可能です。
-              </p>
+              <p class="skill-comment">JS/TSを用いたWebアプリケーション開発が得意です。<br />API連携、データ処理、UI の実装など、フロントエンド機能の開発が可能です。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image">
-                <span class="skill-bg-icon chatgpt-skill-icon"></span>
-              </div>
+              <div class="skill-image"><span class="skill-bg-icon chatgpt-skill-icon"></span></div>
               <div class="skill-name-group">
                 <span class="skill-category">AI-Assisted Development</span>
                 <span class="name">AI Tools</span>
@@ -451,19 +317,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">AIツールを用いた効率的な開発</div>
-              <p class="skill-comment">
-                様々なAIツールやLLMを活用して、高速で正確な開発が得意です。<br />
-                自分で言うのもあれですが、AIに関してはかなりアーリーアダプターかつヘビーユーザだと思っています。<br />
-                進化がとんでもなく早い分野なので、常日頃からアンテナを張り、キャッチアップを心がけています。
-              </p>
+              <p class="skill-comment">様々なAIツールやLLMを活用して、高速で正確な開発が得意です。<br />自分で言うのもあれですが、AIに関してはかなりアーリーアダプターかつヘビーユーザだと思っています。<br />進化がとんでもなく早い分野なので、常日頃からアンテナを張り、キャッチアップを心がけています。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image dual">
-                <i class="devicon-wordpress-plain colored"></i>
-              </div>
+              <div class="skill-image dual"><i class="devicon-wordpress-plain colored"></i></div>
               <div class="skill-name-group">
                 <span class="skill-category">CMS Development</span>
                 <span class="name">WordPress / WooCommerce</span>
@@ -476,18 +336,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">CMS・EC サイト開発</div>
-              <p class="skill-comment">
-                WordPressおよびWooCommerceを用いたサイト構築・カスタマイズの経験があります。<br />
-                カスタムプラグインの開発や外部サービスとの連携も行うことができます。
-              </p>
+              <p class="skill-comment">WordPressおよびWooCommerceを用いたサイト構築・カスタマイズの経験があります。<br />カスタムプラグインの開発や外部サービスとの連携も行うことができます。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image">
-                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-              </div>
+              <div class="skill-image"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div>
               <div class="skill-name-group">
                 <span class="skill-category">Cloud Infrastructure &amp; Deployment</span>
                 <span class="name">AWS / Vercel / Cloudflare</span>
@@ -500,18 +355,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">クラウドデプロイ・インフラ管理</div>
-              <p class="skill-comment">
-                AWS、Vercel、Cloudflareなどを用いたクラウド環境でのアプリケーションのデプロイおよび運用が得意です。<br />
-                システム要件に応じて適切な技術スタックやインフラ構成を検討し、環境構築から運用まで対応することができます。
-              </p>
+              <p class="skill-comment">AWS、Vercel、Cloudflareなどを用いたクラウド環境でのアプリケーションのデプロイおよび運用が得意です。<br />システム要件に応じて適切な技術スタックやインフラ構成を検討し、環境構築から運用まで対応することができます。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image dual">
-                <i class="devicon-nextjs-original-wordmark"></i>
-              </div>
+              <div class="skill-image dual"><i class="devicon-nextjs-original-wordmark"></i></div>
               <div class="skill-name-group">
                 <span class="skill-category">Modern Web Frameworks</span>
                 <span class="name">React / Next.js</span>
@@ -524,18 +374,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">フルスタック開発</div>
-              <p class="skill-comment">
-                ReactおよびNext.jsを用いたモダンなWebアプリケーション開発の経験があります。<br />
-                コンポーネントベースのUI開発やServerSideRenderingを利用した開発が可能です。
-              </p>
+              <p class="skill-comment">ReactおよびNext.jsを用いたモダンなWebアプリケーション開発の経験があります。<br />コンポーネントベースのUI開発やServerSideRenderingを利用した開発が可能です。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image">
-                <img class="custom-icon" src="../images/icon/supabase-logo-icon.svg" alt="Supabase" />
-              </div>
+              <div class="skill-image"><img class="custom-icon" src="/images/icon/supabase-logo-icon.svg" alt="Supabase" /></div>
               <div class="skill-name-group">
                 <span class="skill-category">Backend as a Service</span>
                 <span class="name">Supabase</span>
@@ -548,18 +393,13 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">BaaS・バックエンド構築</div>
-              <p class="skill-comment">
-                Supabaseを利用したバックエンド構築の経験があります。<br />
-                認証、データベース管理、API 連携などを実装することができます。
-              </p>
+              <p class="skill-comment">Supabaseを利用したバックエンド構築の経験があります。<br />認証、データベース管理、API 連携などを実装することができます。</p>
             </div>
           </div>
-
+          
           <div class="skill-box">
             <div class="skill-info">
-              <div class="skill-image">
-                <i class="devicon-photoshop-plain colored"></i>
-              </div>
+              <div class="skill-image"><i class="devicon-photoshop-plain colored"></i></div>
               <div class="skill-name-group">
                 <span class="skill-category">Design &amp; Image Editing</span>
                 <span class="name">Adobe Photoshop</span>
@@ -572,11 +412,10 @@
             </div>
             <div class="skill-details">
               <div class="skill-subcaption">画像編集・ビジュアルデザイン</div>
-              <p class="skill-comment">
-                Adobe Photoshopを用いた画像編集や素材作成、簡単なUIデザイン補助の経験があります。
-              </p>
+              <p class="skill-comment">Adobe Photoshopを用いた画像編集や素材作成、簡単なUIデザイン補助の経験があります。</p>
             </div>
           </div>
+          
         </div>
       </section>
 
@@ -589,150 +428,83 @@
                 <div class="slide-content">
                   <div class="section-title">
                     <h1 class="history-title" data-text="HISTORY">HISTORY</h1>
-                    <h3 class="history-subtitle">Let's explore my life!</h3>
+                    <h3 class="history-subtitle">Let&#39;s explore my life!</h3>
                   </div>
                 </div>
               </div>
-
+              
               <div
                 class="swiper-slide"
-                style="
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.5),
-                      rgba(0, 0, 0, 0.5)
-                    ),
-                    url('../images/timeline/born.jpg');
-                "
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/timeline/born.jpg);"
                 data-year="1997"
               >
                 <div class="swiper-slide-content">
                   <span class="timeline-year">1997</span>
                   <h4 class="timeline-title">静岡県に生まれる</h4>
-                  <p class="timeline-text">
-                    静岡県東部の函南町という田舎町に生まれる<br />
-                    小中学校のときはゲームと外遊び、中高でスケボーにハマる<br />
-                    中高は部活でバレーボールをしていた。<br />
-                    中学生くらいの頃から自分でビジネスしていたいという想いをなんとなく持ち始める
-                  </p>
+                  <p class="timeline-text">静岡県東部の函南町という田舎町に生まれる<br />小中学校のときはゲームと外遊び、中高でスケボーにハマる<br />中高は部活でバレーボールをしていた。<br />中学生くらいの頃から自分でビジネスしていたいという想いをなんとなく持ち始める</p>
                 </div>
               </div>
-
+              
               <div
                 class="swiper-slide"
-                style="
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.5),
-                      rgba(0, 0, 0, 0.5)
-                    ),
-                    url('../images/timeline/college.jpg');
-                "
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/timeline/college.jpg);"
                 data-year="2016"
               >
                 <div class="swiper-slide-content">
                   <span class="timeline-year">2016</span>
                   <h4 class="timeline-title">大学入学</h4>
-                  <p class="timeline-text">
-                    中学生の時に人生で初めてApple製品（iPodTouch）に触れて、テクノロジーに感銘を受ける<br />
-                    ちょうどその頃に急速に広まりつつあった、インターネット、SNS、スマホアプリなど、<br>
-                    Web系のテクノロジーやIT、プログラミングに興味を持ち、エンジニアになろうと決意する<br />
-                    高校生の時は部活に全力で成績は落ちこぼれていたが、<br />
-                    受験勉強を頑張ってなんとか第一志望の大学に入学する
-                  </p>
+                  <p class="timeline-text">中学生の時に人生で初めてApple製品（iPodTouch）に触れて、テクノロジーに感銘を受ける<br />ちょうどその頃に急速に広まりつつあった、インターネット、SNS、スマホアプリなど、<br />Web系のテクノロジーやIT、プログラミングに興味を持ち、エンジニアになろうと決意する<br />高校生の時は部活に全力で成績は落ちこぼれていたが、<br />受験勉強を頑張ってなんとか第一志望の大学に入学する</p>
                 </div>
               </div>
-
+              
               <div
                 class="swiper-slide"
-                style="
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.5),
-                      rgba(0, 0, 0, 0.5)
-                    ),
-                    url('../images/timeline/jobstart.jpg');
-                "
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/timeline/jobstart.jpg);"
                 data-year="2020"
               >
                 <div class="swiper-slide-content">
                   <span class="timeline-year">2020</span>
                   <h4 class="timeline-title">大学卒業、就職</h4>
-                  <p class="timeline-text">
-                    大学を卒業し、大手SIerの企業に新卒で入社<br />
-                    卒業と就職の最中にコロナが蔓延し、フルリモートで社会人をスタート<br />
-                    サラリーマン時代は千葉、熊本、広島と2年半で全国を転々としていた
-                  </p>
+                  <p class="timeline-text">大学を卒業し、大手SIerの企業に新卒で入社<br />卒業と就職の最中にコロナが蔓延し、フルリモートで社会人をスタート<br />サラリーマン時代は千葉、熊本、広島と2年半で全国を転々としていた</p>
                 </div>
               </div>
-
+              
               <div
                 class="swiper-slide"
-                style="
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.5),
-                      rgba(0, 0, 0, 0.5)
-                    ),
-                    url('../images/timeline/freelancer.avif');
-                "
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/timeline/freelancer.avif);"
                 data-year="2022"
               >
                 <div class="swiper-slide-content">
                   <span class="timeline-year">2022</span>
                   <h4 class="timeline-title">フリーランスに転身</h4>
-                  <p class="timeline-text">
-                    社会人経験と実務経験を積むために入った会社だったため、約2年半年で会社を辞める<br />
-                    元から東京で働きたい願望があり、<br />
-                    退職後に東京に引っ越しフリーランスエンジニアとして活動を始める<br />
-                    フリーランス業界ではITの技術力だけで差別化するのが難しいことを悟り、<br/>
-                    色々模索した結果、英語を身に着けて海外でエンジニアとして働くことを目指し始める
-                  </p>
+                  <p class="timeline-text">社会人経験と実務経験を積むために入った会社だったため、約2年半年で会社を辞める<br />元から東京で働きたい願望があり、<br />退職後に東京に引っ越しフリーランスエンジニアとして活動を始める<br />フリーランス業界ではITの技術力だけで差別化するのが難しいことを悟り、<br />色々模索した結果、英語を身に着けて海外でエンジニアとして働くことを目指し始める</p>
                 </div>
               </div>
-
+              
               <div
                 class="swiper-slide"
-                style="
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.5),
-                      rgba(0, 0, 0, 0.5)
-                    ),
-                    url('../images/timeline/studyabroad.jpeg');
-                "
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/timeline/studyabroad.jpeg);"
                 data-year="2024"
               >
                 <div class="swiper-slide-content">
                   <span class="timeline-year">2024</span>
                   <h4 class="timeline-title">語学留学</h4>
-                  <p class="timeline-text">
-                    フリーランスとして働きながら英語学習を続けていたが<br />
-                    日本での成長に限界を感じて語学留学を決意<br />
-                    フィリピン・セブ島で3ヶ月の留学を経験<br />
-                    初の海外生活や海外の友達との異文化交流が楽しすぎて<br />
-                    翌年にワーホリに行くことを決意
-                  </p>
+                  <p class="timeline-text">フリーランスとして働きながら英語学習を続けていたが<br />日本での成長に限界を感じて語学留学を決意<br />フィリピン・セブ島で3ヶ月の留学を経験<br />初の海外生活や海外の友達との異文化交流が楽しすぎて<br />翌年にワーホリに行くことを決意</p>
                 </div>
               </div>
-
+              
               <div
                 class="swiper-slide"
-                style="
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.5),
-                      rgba(0, 0, 0, 0.5)
-                    ),
-                    url('../images/timeline/.jpg');
-                "
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/timeline/canada.jpg);"
                 data-year="2025"
               >
                 <div class="swiper-slide-content">
                   <span class="timeline-year">2025</span>
                   <h4 class="timeline-title">カナダワーホリ</h4>
-                  <p class="timeline-text">
-                    世界のテクノロジーをリードする北米で、技術力と英語力を伸ばしたいと考え、カナダへ行くことを決意。<br />
-                    2025年の7月からカナダのバンクーバーに滞在中<br />
-                    奇跡的に同年12月にエンジニアとして働けることになり<br/>
-                    念願だった海外エンジニアとしてのキャリアをスタート
-                  </p>
+                  <p class="timeline-text">世界のテクノロジーをリードする北米で、技術力と英語力を伸ばしたいと考え、カナダへ行くことを決意。<br />2025年の7月からカナダのバンクーバーに滞在中<br />奇跡的に同年12月にエンジニアとして働けることになり<br />念願だった海外エンジニアとしてのキャリアをスタート</p>
                 </div>
               </div>
+              
             </div>
 
             <div class="swiper-button-prev"></div>
@@ -745,254 +517,140 @@
       <!-- Works Section -->
       <section id="works">
         <div class="section-title">
-          <h1 class="works-title" data-text="WORKS">WORKS</h1>
-        </div>
+  <h1 class="works-title" data-text="WORKS">WORKS</h1>
+</div>
         <div class="container">
           <div class="work-row">
+            
             <div class="work-content">
               <a class="work-thumb work-modal-trigger" href="#work-modal-hanahana">
-                <img
-                  src="../images/works/hanahana-thumb.png"
-                  alt="FLOWER SHOP HANAHANA"
-                />
+                <img src="/images/works/hanahana-thumb.png" alt="FLOWER SHOP HANAHANA" />
               </a>
               <div class="work-badges">
-                <span class="work-badge">HTML/CSS</span>
-                <span class="work-badge">Javascript</span>
-                <span class="work-badge">WordPress</span>
+                <span class="work-badge">HTML/CSS</span><span class="work-badge">Javascript</span><span class="work-badge">WordPress</span>
               </div>
               <p class="work-title">
-                <a class="link work-modal-trigger" href="#work-modal-hanahana">
-                  FLOWER SHOP HANA*HANA
-                </a>
+                <a class="link work-modal-trigger" href="#work-modal-hanahana">FLOWER SHOP HANA*HANA</a>
               </p>
 
               <div id="work-modal-hanahana" class="work-modal" style="display: none">
                 <div class="work-modal-thumb">
-                  <img
-                    class="work-modal-image"
-                    src="../images/works/hanahana-thumb.png"
-                    alt="FLOWER SHOP HANAHANA"
-                  />
+                  <img class="work-modal-image" src="/images/works/hanahana-thumb.png" alt="FLOWER SHOP HANAHANA" />
                 </div>
                 <h3 class="work-modal-title">FLOWER SHOP HANA*HANA</h3>
                 <div class="work-badges">
-                  <span class="work-badge">HTML/CSS</span>
-                  <span class="work-badge">Javascript</span>
-                  <span class="work-badge">WordPress</span>
+                  <span class="work-badge">HTML/CSS</span><span class="work-badge">Javascript</span><span class="work-badge">WordPress</span>
                 </div>
-                <p class="work-modal-description">
-                  私の地元である静岡県函南町にあるお花屋さんです。<br />
-                  WordPressを使ってホームページ制作を１から担当させていただきました。
-                </p>
-                <a
-                  class="work-modal-link"
-                  href="https://flowershop-hanahana.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  サイトを見る ↗
-                </a>
+                <p class="work-modal-description">私の地元である静岡県函南町にあるお花屋さんです。<br />WordPressを使ってホームページ制作を１から担当させていただきました。</p>
+                <a class="work-modal-link" href="https://flowershop-hanahana.com/" target="_blank" rel="noopener noreferrer">サイトを見る ↗</a>
               </div>
             </div>
-
+            
             <div class="work-content">
               <a class="work-thumb work-modal-trigger" href="#work-modal-negura">
-                <img
-                  src="../images/works/work_negura.jpg"
-                  alt="negura campground"
-                />
+                <img src="/images/works/work_negura.jpg" alt="negura campground" />
               </a>
               <div class="work-badges">
-                <span class="work-badge">HTML/CSS</span>
-                <span class="work-badge">Javascript</span>
-                <span class="work-badge">WordPress</span>
-                <span class="work-badge">PHP</span>
+                <span class="work-badge">HTML/CSS</span><span class="work-badge">Javascript</span><span class="work-badge">WordPress</span><span class="work-badge">PHP</span>
               </div>
               <p class="work-title">
-                <a class="link work-modal-trigger" href="#work-modal-negura">
-                  negura campground
-                </a>
+                <a class="link work-modal-trigger" href="#work-modal-negura">negura campground</a>
               </p>
 
               <div id="work-modal-negura" class="work-modal" style="display: none">
                 <div class="work-modal-thumb">
-                  <img
-                    class="work-modal-image"
-                    src="../images/works/work_negura.jpg"
-                    alt="negura campground"
-                  />
+                  <img class="work-modal-image" src="/images/works/work_negura.jpg" alt="negura campground" />
                 </div>
                 <h3 class="work-modal-title">negura campground</h3>
                 <div class="work-badges">
-                  <span class="work-badge">HTML/CSS</span>
-                  <span class="work-badge">Javascript</span>
-                  <span class="work-badge">WordPress</span>
-                  <span class="work-badge">PHP</span>
+                  <span class="work-badge">HTML/CSS</span><span class="work-badge">Javascript</span><span class="work-badge">WordPress</span><span class="work-badge">PHP</span>
                 </div>
-                <p class="work-modal-description">
-                  私の地元である静岡県函南町にあるキャンプ場です。<br />
-                  WordPressを使ってホームページ制作を１から担当させていただきました。
-                </p>
-                <a
-                  class="work-modal-link"
-                  href="https://negura.website/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  サイトを見る ↗
-                </a>
+                <p class="work-modal-description">私の地元である静岡県函南町にあるキャンプ場です。<br />WordPressを使ってホームページ制作を１から担当させていただきました。</p>
+                <a class="work-modal-link" href="https://negura.website/" target="_blank" rel="noopener noreferrer">サイトを見る ↗</a>
               </div>
             </div>
-
+            
             <div class="work-content">
               <a class="work-thumb work-modal-trigger" href="#work-modal-queue">
-                <img
-                  src="../images/works/work-queue-management-demo.png"
-                  alt="queue management demo"
-                />
+                <img src="/images/works/work-queue-management-demo.png" alt="queue management demo" />
               </a>
               <div class="work-badges">
-                <span class="work-badge">HTML/CSS</span>
-                <span class="work-badge">Javascript</span>
-                <span class="work-badge">Firebase</span>
+                <span class="work-badge">HTML/CSS</span><span class="work-badge">Javascript</span><span class="work-badge">Firebase</span>
               </div>
               <p class="work-title">
-                <a class="link work-modal-trigger" href="#work-modal-queue">
-                  待ち行列管理システム
-                </a>
+                <a class="link work-modal-trigger" href="#work-modal-queue">待ち行列管理システム</a>
               </p>
 
               <div id="work-modal-queue" class="work-modal" style="display: none">
                 <div class="work-modal-thumb">
-                  <img
-                    class="work-modal-image"
-                    src="../images/works/work-queue-management-demo.png"
-                    alt="queue management demo"
-                  />
+                  <img class="work-modal-image" src="/images/works/work-queue-management-demo.png" alt="queue management demo" />
                 </div>
                 <h3 class="work-modal-title">待ち行列管理システム</h3>
                 <div class="work-badges">
-                  <span class="work-badge">HTML/CSS</span>
-                  <span class="work-badge">Javascript</span>
-                  <span class="work-badge">Firebase</span>
+                  <span class="work-badge">HTML/CSS</span><span class="work-badge">Javascript</span><span class="work-badge">Firebase</span>
                 </div>
-                <p class="work-modal-description">
-                  カナダのワーキングホリデー中に働いていた飲食店で紙とペンで管理されていた待ち行列を効率化するために開発したアプリケーションです。<br />
-                  JavaScriptとFirebaseを用いて、待ち状況をスタッフ間で共有できる仕組みを構築しました。<br />
-                  本運用には至りませんでしたが、実際に店舗でテスト運用され、スタッフやマネージャーから高い評価をいただけました。
-                </p>
-                <a
-                  class="work-modal-link"
-                  href="https://queue-management-e6459.web.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  サイトを見る ↗
-                </a>
+                <p class="work-modal-description">カナダのワーキングホリデー中に働いていた飲食店で紙とペンで管理されていた待ち行列を効率化するために開発したアプリケーションです。<br />JavaScriptとFirebaseを用いて、待ち状況をスタッフ間で共有できる仕組みを構築しました。<br />本運用には至りませんでしたが、実際に店舗でテスト運用され、スタッフやマネージャーから高い評価をいただけました。</p>
+                <a class="work-modal-link" href="https://queue-management-e6459.web.app/" target="_blank" rel="noopener noreferrer">サイトを見る ↗</a>
               </div>
             </div>
+            
             <div class="work-content">
               <a class="work-thumb work-modal-trigger" href="#work-modal-ielts">
-                <img
-                  src="../images/works/work_ieltswriting.png"
-                  alt="IELTS Writing Lab"
-                />
+                <img src="/images/works/work_ieltswriting.png" alt="IELTS Writing Lab" />
               </a>
               <div class="work-badges">
-                <span class="work-badge">TypeScript</span>
-                <span class="work-badge">HTML/CSS</span>
+                <span class="work-badge">TypeScript</span><span class="work-badge">HTML/CSS</span>
               </div>
               <p class="work-title">
-                <a class="link work-modal-trigger" href="#work-modal-ielts">
-                  IELTS Writing Lab
-                </a>
+                <a class="link work-modal-trigger" href="#work-modal-ielts">IELTS Writing Lab</a>
               </p>
 
               <div id="work-modal-ielts" class="work-modal" style="display: none">
                 <div class="work-modal-thumb">
-                  <img
-                    class="work-modal-image"
-                    src="../images/works/work_ieltswriting.png"
-                    alt="IELTS Writing Lab"
-                  />
+                  <img class="work-modal-image" src="/images/works/work_ieltswriting.png" alt="IELTS Writing Lab" />
                 </div>
                 <h3 class="work-modal-title">IELTS Writing Lab</h3>
                 <div class="work-badges">
-                  <span class="work-badge">TypeScript</span>
-                  <span class="work-badge">HTML/CSS</span>
+                  <span class="work-badge">TypeScript</span><span class="work-badge">HTML/CSS</span>
                 </div>
-                <p class="work-modal-description">
-                  IELTSのライティング対策をしている中で、本番と同じような環境で練習できるサービスがないと感じたことをきっかけに制作しました。<br />
-                  練習問題やカスタマイズ可能なテキストエディタ、タイマー、AIを活用した高度な採点・添削機能、スペルチェックと単語登録機能など、受験者目線で欲しい機能をすべて盛り込んだアプリケーションです。<br />
-                  すべての機能が自身の受験経験から生まれており、IELTSライティングの実践的な対策ツールを目指しました。
-                </p>
-                <a
-                  class="work-modal-link"
-                  href="https://ieltswritinglab.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  サイトを見る ↗
-                </a>
+                <p class="work-modal-description">IELTSのライティング対策をしている中で、本番と同じような環境で練習できるサービスがないと感じたことをきっかけに制作しました。<br />練習問題やカスタマイズ可能なテキストエディタ、タイマー、AIを活用した高度な採点・添削機能、スペルチェックと単語登録機能など、受験者目線で欲しい機能をすべて盛り込んだアプリケーションです。<br />すべての機能が自身の受験経験から生まれており、IELTSライティングの実践的な対策ツールを目指しました。</p>
+                <a class="work-modal-link" href="https://ieltswritinglab.com/" target="_blank" rel="noopener noreferrer">サイトを見る ↗</a>
               </div>
             </div>
+            
             <div class="work-content">
               <a class="work-thumb work-modal-trigger" href="#work-modal-aina">
-                <img
-                  src="../images/works/work_aina.png"
-                  alt="Aina Yoga Pilates Studio"
-                />
+                <img src="/images/works/work_aina.png" alt="Aina Yoga Pilates Studio" />
               </a>
               <div class="work-badges">
-                <span class="work-badge">WordPress</span>
-                <span class="work-badge">PHP</span>
-                <span class="work-badge">Javascript</span>
-                <span class="work-badge">HTML/CSS</span>
+                <span class="work-badge">WordPress</span><span class="work-badge">PHP</span><span class="work-badge">Javascript</span><span class="work-badge">HTML/CSS</span>
               </div>
               <p class="work-title">
-                <a class="link work-modal-trigger" href="#work-modal-aina">
-                  Aina - Yoga Pilates Studio
-                </a>
+                <a class="link work-modal-trigger" href="#work-modal-aina">Aina - Yoga Pilates Studio</a>
               </p>
 
               <div id="work-modal-aina" class="work-modal" style="display: none">
                 <div class="work-modal-thumb">
-                  <img
-                    class="work-modal-image"
-                    src="../images/works/work_aina.png"
-                    alt="Aina Yoga Pilates Studio"
-                  />
+                  <img class="work-modal-image" src="/images/works/work_aina.png" alt="Aina Yoga Pilates Studio" />
                 </div>
                 <h3 class="work-modal-title">Aina - Yoga Pilates Studio</h3>
                 <div class="work-badges">
-                  <span class="work-badge">WordPress</span>
-                  <span class="work-badge">PHP</span>
-                  <span class="work-badge">Javascript</span>
-                  <span class="work-badge">HTML/CSS</span>
+                  <span class="work-badge">WordPress</span><span class="work-badge">PHP</span><span class="work-badge">Javascript</span><span class="work-badge">HTML/CSS</span>
                 </div>
-                <p class="work-modal-description">
-                  千葉県津田沼市にあるヨガ・ピラティススタジオのホームページとロゴ制作をご担当させていただきました。<br />
-                  WordPressをベースにTOPページとSERVICEページはPHPでコーディングして作成しました。<br />
-                </p>
-                <a
-                  class="work-modal-link"
-                  href="https://aina-tsudanuma.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  サイトを見る ↗
-                </a>
+                <p class="work-modal-description">千葉県津田沼市にあるヨガ・ピラティススタジオのホームページとロゴ制作をご担当させていただきました。<br />WordPressをベースにTOPページとSERVICEページはPHPでコーディングして作成しました。<br /></p>
+                <a class="work-modal-link" href="https://aina-tsudanuma.com/" target="_blank" rel="noopener noreferrer">サイトを見る ↗</a>
               </div>
             </div>
+            
+          </div>
         </div>
       </section>
 
       <!-- Gallery Section -->
       <section id="gallery">
         <div class="section-title">
-          <h1 class="instagram-title" data-text="GALLERY">GALLERY</h1>
-        </div>
+  <h1 class="instagram-title" data-text="GALLERY">GALLERY</h1>
+</div>
         <div id="ig-root">
           <div id="ig-title"></div>
           <div id="ig-profile"></div>
@@ -1004,72 +662,217 @@
       <section id="hundred-things">
         <div class="container">
           <div class="section-title">
-            <h1 class="hundred-things-preview-title" data-text="100 THINGS">100 THINGS</h1>
-          </div>
+  <h1 class="hundred-things-preview-title" data-text="100 THINGS">100 THINGS</h1>
+</div>
         </div>
-        <!-- Row 1: left -->
+        
         <div class="hundred-things-ticker">
           <div class="hundred-things-ticker-track">
-            <div class="hundred-things-ticker-item"><img src="../images/100/01-naruto.webp" alt="NARUTO" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/04-vancouver.webp" alt="Vancouver" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/20-skateboard.webp" alt="スケボー" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/37-dog.webp" alt="犬" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/47-snowboard.webp" alt="スノボー" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/56-trail.webp" alt="トレイル" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/65-gtr.webp" alt="GTR" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/43-workout.webp" alt="筋トレ" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/06-twice.webp" alt="TWICE" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/34-travel.webp" alt="海外旅行" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/08-sushi.webp" alt="寿司" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/29-hood.webp" alt="地元" /></div>
-            <!-- duplicate -->
-            <div class="hundred-things-ticker-item"><img src="../images/100/01-naruto.webp" alt="NARUTO" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/04-vancouver.webp" alt="Vancouver" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/20-skateboard.webp" alt="スケボー" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/37-dog.webp" alt="犬" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/47-snowboard.webp" alt="スノボー" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/56-trail.webp" alt="トレイル" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/82-surfing.webp" alt="サーフィン" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/43-workout.webp" alt="筋トレ" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/06-twice.webp" alt="TWICE" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/34-travel.webp" alt="海外旅行" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/08-sushi.webp" alt="寿司" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/29-hood.webp" alt="地元" /></div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/01-naruto.webp" alt="NARUTO" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/04-vancouver.webp" alt="Vancouver" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/20-skateboard.webp" alt="スケボー" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/37-dog.webp" alt="犬" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/47-snowboard.webp" alt="スノボー" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/56-trail.webp" alt="トレイル" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/65-gtr.webp" alt="GTR" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/43-workout.webp" alt="筋トレ" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/06-twice.webp" alt="TWICE" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/34-travel.webp" alt="海外旅行" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/08-sushi.webp" alt="寿司" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/29-hood.webp" alt="地元" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/01-naruto.webp" alt="NARUTO" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/04-vancouver.webp" alt="Vancouver" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/20-skateboard.webp" alt="スケボー" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/37-dog.webp" alt="犬" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/47-snowboard.webp" alt="スノボー" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/56-trail.webp" alt="トレイル" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/82-surfing.webp" alt="サーフィン" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/43-workout.webp" alt="筋トレ" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/06-twice.webp" alt="TWICE" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/34-travel.webp" alt="海外旅行" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/08-sushi.webp" alt="寿司" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/29-hood.webp" alt="地元" />
+            </div>
+            
           </div>
         </div>
-        <!-- Row 2: right -->
+        
         <div class="hundred-things-ticker">
           <div class="hundred-things-ticker-track reverse">
-            <div class="hundred-things-ticker-item"><img src="../images/100/05-sunset.webp" alt="夕焼け" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/16-onepiece.webp" alt="ONE PIECE" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/39-ramen.webp" alt="ラーメン" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/41-attackontitan.webp" alt="進撃の巨人" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/26-beer.webp" alt="ビール" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/33-dragonball.webp" alt="Dragon Ball" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/30-ai.webp" alt="AI" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/58-internationalmusic.webp" alt="洋楽" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/59-kingdom.webp" alt="キングダム" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/70-drone.webp" alt="ドローン" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/71-wakeupearly.webp" alt="早起き" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/72-jojo.webp" alt="JOJO" /></div>
-            <!-- duplicate -->
-            <div class="hundred-things-ticker-item"><img src="../images/100/05-sunset.webp" alt="夕焼け" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/16-onepiece.webp" alt="ONE PIECE" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/39-ramen.webp" alt="ラーメン" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/41-attackontitan.webp" alt="進撃の巨人" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/26-beer.webp" alt="ビール" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/33-dragonball.webp" alt="Dragon Ball" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/30-ai.webp" alt="AI" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/58-internationalmusic.webp" alt="洋楽" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/59-kingdom.webp" alt="キングダム" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/70-drone.webp" alt="ドローン" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/71-wakeupearly.webp" alt="早起き" /></div>
-            <div class="hundred-things-ticker-item"><img src="../images/100/72-jojo.webp" alt="JOJO" /></div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/05-sunset.webp" alt="夕焼け" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/16-onepiece.webp" alt="ONE PIECE" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/39-ramen.webp" alt="ラーメン" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/41-attackontitan.webp" alt="進撃の巨人" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/26-beer.webp" alt="ビール" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/33-dragonball.webp" alt="Dragon Ball" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/30-ai.webp" alt="AI" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/58-internationalmusic.webp" alt="洋楽" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/59-kingdom.webp" alt="キングダム" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/70-drone.webp" alt="ドローン" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/71-wakeupearly.webp" alt="早起き" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/72-jojo.webp" alt="JOJO" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/05-sunset.webp" alt="夕焼け" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/16-onepiece.webp" alt="ONE PIECE" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/39-ramen.webp" alt="ラーメン" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/41-attackontitan.webp" alt="進撃の巨人" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/26-beer.webp" alt="ビール" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/33-dragonball.webp" alt="Dragon Ball" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/30-ai.webp" alt="AI" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/58-internationalmusic.webp" alt="洋楽" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/59-kingdom.webp" alt="キングダム" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/70-drone.webp" alt="ドローン" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/71-wakeupearly.webp" alt="早起き" />
+            </div>
+            
+            <div class="hundred-things-ticker-item">
+              <img src="/images/100/72-jojo.webp" alt="JOJO" />
+            </div>
+            
           </div>
         </div>
+        
         <p class="hundred-things-preview-desc">自分を形成する100のこと</p>
         <div class="hundred-things-preview-cta">
-          <a href="100/" class="hundred-things-preview-link">すべて見る →</a>
+          <a href="/ja/100/" class="hundred-things-preview-link">すべて見る →</a>
         </div>
       </section>
 
@@ -1077,60 +880,32 @@
       <section id="contact">
         <div class="container">
           <div class="section-title">
-            <h1 class="contact-title" data-text="CONTACT">CONTACT</h1>
-          </div>
+  <h1 class="contact-title" data-text="CONTACT">CONTACT</h1>
+</div>
           <div class="form-area">
-            <p>
-              最後まで閲覧頂きありがとうございました。<br />
-              お見積もりや案件のご相談など、お気軽にお問い合わせください！
-            </p>
-            <form
-              action="https://formspree.io/f/xzznwyay"
-              method="POST"
-              name="comments"
-              id="contact-form"
-            >
+            <p>最後まで閲覧頂きありがとうございました。<br />お見積もりや案件のご相談など、お気軽にお問い合わせください！</p>
+            <form action="https://formspree.io/f/xzznwyay" method="POST" name="comments" id="contact-form">
               <div class="row1">
                 <div class="half-form">
-                  <input
-                    id="name"
-                    type="text"
-                    name="yourname"
-                    placeholder=""
-                    class="ef"
-                  />
+                  <input id="name" type="text" name="yourname" placeholder="" class="ef" />
                   <label for="name">お名前</label>
                   <span class="focus_line"></span>
                 </div>
                 <div class="half-form">
-                  <input
-                    id="mail"
-                    type="email"
-                    name="yourmail"
-                    placeholder=""
-                    class="ef"
-                  />
+                  <input id="mail" type="email" name="yourmail" placeholder="" class="ef" />
                   <label for="mail">Eメール</label>
                   <span class="focus_line"></span>
                 </div>
               </div>
               <div class="row2">
                 <div class="half-form2">
-                  <textarea
-                    id="comment"
-                    type="text"
-                    name="yourcomment"
-                    placeholder=""
-                    class="ef"
-                  ></textarea>
+                  <textarea id="comment" type="text" name="yourcomment" placeholder="" class="ef"></textarea>
                   <label for="comment">お問い合わせ内容</label>
                   <span class="focus_line"></span>
                 </div>
               </div>
               <div class="row3">
-                <button type="submit" class="btn">
-                  <span>送信</span>
-                </button>
+                <button type="submit" class="btn"><span>送信</span></button>
               </div>
             </form>
           </div>
@@ -1142,77 +917,34 @@
     <footer id="footer">
       <div class="footer-area">
         <ul class="sns-icon">
-          <li>
-            <a
-              href="https://www.instagram.com/koseiayabe/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=100004384213742"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://open.spotify.com/user/xx.ha3.busoh.sotb.xx?si=wIksSnGrT6qERklNfWdoVQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Spotify"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://sauna-ikitai.com/saunners/128334"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="サウナイキタイ"
-              class="custom-icon2 sauna-icon"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/KoseiAyabe"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/kosei-ayabe-52ba112aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://note.com/kosei_1031"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="note"
-              class="custom-icon2 note-icon"
-            ></a>
-          </li>
-        </ul>
+  
+  <li><a href="https://www.instagram.com/koseiayabe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a></li>
+  
+  <li><a href="https://www.facebook.com/profile.php?id=100004384213742" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a></li>
+  
+  <li><a href="https://open.spotify.com/user/xx.ha3.busoh.sotb.xx?si=wIksSnGrT6qERklNfWdoVQ" target="_blank" rel="noopener noreferrer" aria-label="Spotify"></a></li>
+  
+  <li><a href="https://sauna-ikitai.com/saunners/128334" target="_blank" rel="noopener noreferrer" aria-label="サウナイキタイ" class="custom-icon2 sauna-icon"></a></li>
+  
+  <li><a href="https://github.com/KoseiAyabe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"></a></li>
+  
+  <li><a href="https://www.linkedin.com/in/kosei-ayabe-52ba112aa?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a></li>
+  
+  <li><a href="https://note.com/kosei_1031" target="_blank" rel="noopener noreferrer" aria-label="note" class="custom-icon2 note-icon"></a></li>
+  
+</ul>
         <p class="copyright">&copy; 2026 Kosei Ayabe All rights reserved.</p>
       </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="../script/ig-embed.js?v=20260830d"></script>
+    <script src="/script/ig-embed.js?v=20260830d"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/swiper@14.2.0/swiper-bundle.min.js"></script>
-    <script src="../script/headerScroll.js?v=20260830d"></script>
-    <script src="../script/script.js?v=20260830d"></script>
-    <script src="../script/themeSwitcher.js?v=20260830d" defer></script>
-    <script src="../script/modaal.js?v=20260830d"></script>
+    <script src="/script/headerScroll.js?v=20260830d"></script>
+    <script src="/script/script.js?v=20260830d"></script>
+    <script src="/script/themeSwitcher.js?v=20260830d" defer></script>
+    <script src="/script/modaal.js?v=20260830d"></script>
     <script>
       $(".gallery").modaal({ type: "image" });
       $(".work-modal-trigger").modaal({
@@ -1220,6 +952,5 @@
         custom_class: "work-modaal",
       });
     </script>
-
   </body>
 </html>

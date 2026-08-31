@@ -1,0 +1,60 @@
+{
+  "heading": "HISTORY",
+  "subtitle": "Let's explore my life!",
+  "entries": [
+    {
+      "year": "1997",
+      "image": "born.jpg",
+      "title": { "en": "Born in Shizuoka", "ja": "静岡県に生まれる" },
+      "text": {
+        "en": "Born in a small town in Shizuoka prefecture Japan.<br />As a kid, I was always outside or playing video games. Got hooked on skateboarding in junior and senior high.<br />I played volleyball in school clubs.<br />Around that time, I started vaguely dreaming about running my own business someday.",
+        "ja": "静岡県東部の函南町という田舎町に生まれる<br />小中学校のときはゲームと外遊び、中高でスケボーにハマる<br />中高は部活でバレーボールをしていた。<br />中学生くらいの頃から自分でビジネスしていたいという想いをなんとなく持ち始める"
+      }
+    },
+    {
+      "year": "2016",
+      "image": "college.jpg",
+      "title": { "en": "Entered IT Faculty", "ja": "大学入学" },
+      "text": {
+        "en": "When I got my first iPod Touch in middle school, I was amazed by what technology could do.<br />As the internet, social media, and apps grew, I became interested in becoming an engineer.<br />Although I focused more on sports than school in high school, I studied hard for the entrance exams and got into my top-choice university.",
+        "ja": "中学生の時に人生で初めてApple製品（iPodTouch）に触れて、テクノロジーに感銘を受ける<br />ちょうどその頃に急速に広まりつつあった、インターネット、SNS、スマホアプリなど、<br />Web系のテクノロジーやIT、プログラミングに興味を持ち、エンジニアになろうと決意する<br />高校生の時は部活に全力で成績は落ちこぼれていたが、<br />受験勉強を頑張ってなんとか第一志望の大学に入学する"
+      }
+    },
+    {
+      "year": "2020",
+      "image": "jobstart.jpg",
+      "title": { "en": "Graduated and Started Career", "ja": "大学卒業、就職" },
+      "text": {
+        "en": "Graduated and joined a major system integration company as a new graduate.<br />Just as I started my career, COVID-19 hit and I began working fully remotely.<br />Over the next two and a half years, I moved around Japan—Chiba, Kumamoto, Hiroshima.",
+        "ja": "大学を卒業し、大手SIerの企業に新卒で入社<br />卒業と就職の最中にコロナが蔓延し、フルリモートで社会人をスタート<br />サラリーマン時代は千葉、熊本、広島と2年半で全国を転々としていた"
+      }
+    },
+    {
+      "year": "2022",
+      "image": "freelancer.avif",
+      "title": { "en": "Became a Freelancer", "ja": "フリーランスに転身" },
+      "text": {
+        "en": "Having joined the company to build my professional experience, I left after about two and a half years.<br />I had always wanted to work in Tokyo, so I moved there after quitting and started out as a freelance engineer.<br />I realized that technical skills alone weren’t enough to stand out in the freelance world.<br />After a lot of thinking, I set my sights on learning English and working as an engineer abroad.",
+        "ja": "社会人経験と実務経験を積むために入った会社だったため、約2年半年で会社を辞める<br />元から東京で働きたい願望があり、<br />退職後に東京に引っ越しフリーランスエンジニアとして活動を始める<br />フリーランス業界ではITの技術力だけで差別化するのが難しいことを悟り、<br />色々模索した結果、英語を身に着けて海外でエンジニアとして働くことを目指し始める"
+      }
+    },
+    {
+      "year": "2024",
+      "image": "studyabroad.jpeg",
+      "title": { "en": "Studied in Cebu", "ja": "語学留学" },
+      "text": {
+        "en": "I studied English while working as a freelancer, but I wanted to improve more.<br />So I spent three months studying abroad in Cebu, Philippines.<br />I loved living overseas and making friends from different countries,<br />so I decided to go on a working holiday the following year.",
+        "ja": "フリーランスとして働きながら英語学習を続けていたが<br />日本での成長に限界を感じて語学留学を決意<br />フィリピン・セブ島で3ヶ月の留学を経験<br />初の海外生活や海外の友達との異文化交流が楽しすぎて<br />翌年にワーホリに行くことを決意"
+      }
+    },
+    {
+      "year": "2025",
+      "image": "canada.jpg",
+      "title": { "en": "Working Holiday in Canada", "ja": "カナダワーホリ" },
+      "text": {
+        "en": "North America is one of the world’s leading tech regions,<br />so I chose Canada to improve both my technical skills and English.<br />I moved to Vancouver in July 2025 and got a job as an engineer that December.<br />This was the start of the career abroad I had always dreamed.",
+        "ja": "世界のテクノロジーをリードする北米で、技術力と英語力を伸ばしたいと考え、カナダへ行くことを決意。<br />2025年の7月からカナダのバンクーバーに滞在中<br />奇跡的に同年12月にエンジニアとして働けることになり<br />念願だった海外エンジニアとしてのキャリアをスタート"
+      }
+    }
+  ]
+}

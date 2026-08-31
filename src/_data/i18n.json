@@ -1,0 +1,104 @@
+{
+  "en": {
+    "siteTitle": "Hi, I'M KOSEI",
+    "menuAria": "Menu",
+    "nav": [
+      { "href": "#profile", "label": "Profile" },
+      { "href": "#skill", "label": "Skill" },
+      { "href": "#timeline-section", "label": "History" },
+      { "href": "#works", "label": "Works" },
+      { "href": "#gallery", "label": "Gallery" },
+      { "href": "#hundred-things", "label": "100 Things" },
+      { "href": "#contact", "label": "Contact" }
+    ],
+    "langToggle": { "href": "/ja/", "label": "Japanese" },
+    "themeAria": {
+      "normal-day": "day",
+      "normal-night": "night",
+      "forest": "forest",
+      "ocean": "ocean",
+      "land": "land"
+    },
+    "profileImgAlt": "Profile Image",
+    "profileName": "Kosei&nbsp;Ayabe",
+    "profileText": "Hi, I'm Kosei — a software engineer currently based in Canada.<br />I was born in 1997 in Shizuoka, Japan, and studied computer science at university.<br />After graduation, I joined a major system integration company, where I worked as a systems engineer for about two and a half years.<br />In January 2023, I decided to take the leap and started my career as a freelancer.<br />Outside of work, I love traveling, saunas, reading books, and enjoying manga and anime.<br />I'm also into board sports like skateboarding, surfing, and snowboarding.<br />Recently, I've been studying English a lot.",
+    "worksVisit": "Visit Site ↗",
+    "contact": {
+      "intro": "Thanks for watching!<br />Please feel free to contact us for a quote or to discuss your project!",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "messageLabel": "Your Message",
+      "submit": "submit"
+    },
+    "hundredPreview": {
+      "desc": "100 things that make me who I am.",
+      "cta": "VIEW ALL 100 →"
+    },
+    "copyright": "&copy; 2026 Kosei Ayabe All rights reserved.",
+    "hundred": {
+      "back": "Portfolio",
+      "navTitle": "100 Things",
+      "mobileMenu": [
+        { "suffix": "", "label": "← Portfolio" },
+        { "suffix": "#profile", "label": "Profile" },
+        { "suffix": "#skill", "label": "Skill" },
+        { "suffix": "#works", "label": "Works" },
+        { "suffix": "#contact", "label": "Contact" }
+      ],
+      "introLead": "Things that make up who I am.",
+      "introSub": "The things I love, the things I value — everything that makes me, me.",
+      "footer": "&copy; Kosei Ayabe"
+    }
+  },
+  "ja": {
+    "siteTitle": "Hi, I'M KOSEI",
+    "menuAria": "メニュー",
+    "nav": [
+      { "href": "#profile", "label": "Profile" },
+      { "href": "#skill", "label": "Skill" },
+      { "href": "#timeline-section", "label": "History" },
+      { "href": "#works", "label": "Works" },
+      { "href": "#gallery", "label": "Gallery" },
+      { "href": "#hundred-things", "label": "100 Things" },
+      { "href": "#contact", "label": "Contact" }
+    ],
+    "langToggle": { "href": "/", "label": "English" },
+    "themeAria": {
+      "normal-day": "デイモード",
+      "normal-night": "ナイトモード",
+      "forest": "森モード",
+      "ocean": "海モード",
+      "land": "山モード"
+    },
+    "profileImgAlt": "Profile Image",
+    "profileName": "Kosei&nbsp;Ayabe",
+    "profileText": "1997年、静岡県生まれ。<br />現在はカナダでエンジニアとして働いています。<br />大学でコンピューターサイエンスを専攻し、新卒で大手SIer企業に入社。<br />入社後約2年半、SEとして業務経験を積み、2023年1月からフリーランスとして活動をスタート。<br />趣味は旅行とサウナと読書、漫画とアニメです。<br />スケート、サーフィン、スノーボードなど横乗りのスポーツも好きです。<br />最近は英語学習、AIを使ったWebアプリケーションの制作にハマってます。",
+    "worksVisit": "サイトを見る ↗",
+    "contact": {
+      "intro": "最後まで閲覧頂きありがとうございました。<br />お見積もりや案件のご相談など、お気軽にお問い合わせください！",
+      "nameLabel": "お名前",
+      "emailLabel": "Eメール",
+      "messageLabel": "お問い合わせ内容",
+      "submit": "送信"
+    },
+    "hundredPreview": {
+      "desc": "自分を形成する100のこと",
+      "cta": "すべて見る →"
+    },
+    "copyright": "&copy; 2026 Kosei Ayabe All rights reserved.",
+    "hundred": {
+      "back": "Portfolio",
+      "navTitle": "100 Things",
+      "mobileMenu": [
+        { "suffix": "", "label": "← Portfolio" },
+        { "suffix": "#profile", "label": "Profile" },
+        { "suffix": "#skill", "label": "Skill" },
+        { "suffix": "#works", "label": "Works" },
+        { "suffix": "#contact", "label": "Contact" }
+      ],
+      "introLead": "僕を形づくっているもの。",
+      "introSub": "好きなこと、大切にしていること、人生を形づくっているものたちを紹介します。",
+      "footer": "&copy; Kosei Ayabe"
+    }
+  }
+}
