@@ -970,7 +970,7 @@ TIMELINE SECTION
     transform: rotate(90deg) translate(-3px, 10px);
   }
   .timeline .swiper-button-next {
-    top: 85%;
+    top: auto;
     bottom: 15%;
     left: auto;
     right: 15%;
@@ -988,6 +988,14 @@ TIMELINE SECTION
     width: 240px;
     height: 50%;
     /* box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7); */
+  }
+  .timeline .title-slide::after {
+    right: -20%;
+    bottom: -12%;
+    width: 240px;
+    height: 50%;
+    box-shadow: none;
+    display: none;
   }
   .timeline .swiper-slide-content {
     right: 25%;
@@ -1709,27 +1717,6 @@ TIMELINE SECTION
   background-image: url("../images/icon/note2.svg");
 }
 
-/* ========== Timeline Enhancements ========== */
-/* ========== Timeline 1024px+ Specific ========== */
-@media screen and (min-width: 1024px) {
-  .timeline .swiper-slide::after {
-    right: -20%;
-    bottom: -12%;
-    width: 60%;
-    height: 50%;
-  }
-  .timeline .title-slide::after {
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    box-shadow: none;
-    display: none;
-  }
-  .timeline .swiper-slide-content {
-    right: 25%;
-  }
-}
 /* ========== Google Fonts Utility Classes ========== */
 .titillium-web-regular {
   font-family: "Titillium Web", sans-serif;
@@ -1750,60 +1737,9 @@ TIMELINE SECTION
 }
 
 @media screen and (min-width: 768px) {
-  .timeline .swiper-slide::after {
-    right: -30%;
-    bottom: -8%;
-    width: 240px;
-    height: 50%;
-    /* box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.7); */
-  }
-  .timeline .swiper-slide-content {
-    right: 30%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60%;
-    font-size: 15px;
-    text-align: right;
-  }
-  .timeline .swiper-pagination {
-    display: flex;
-  }
-  .timeline .swiper-button-prev {
-    top: 15%;
-    left: auto;
-    right: 15%;
-    transform: rotate(90deg) translate(0, 10px);
-  }
-  .timeline .swiper-button-prev:hover {
-    transform: rotate(90deg) translate(-3px, 10px);
-  }
-  .timeline .swiper-button-next {
-    top: auto;
-    bottom: 15%;
-    right: 15%;
-    transform: rotate(90deg) translate(0, 10px);
-  }
-  .timeline .swiper-button-next:hover {
-    transform: rotate(90deg) translate(3px, 10px);
-  }
-  #contact .half-form {
-    width: 40%;
-  }
   #contact .half-form2 {
     width: calc(80% + 20px);
     margin: 0 auto 40px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .timeline .swiper-slide::after {
-    right: -20%;
-    bottom: -12%;
-    width: 240px;
-    height: 50%;
-    /* box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7); */
-  }
-  .timeline .swiper-slide-content {
-    right: 25%;
   }
 }
 @media screen and (min-width: 1024px) {
