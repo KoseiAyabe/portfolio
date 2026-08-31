@@ -684,12 +684,6 @@ async function loadIgEmbed() {
 
     const img = document.createElement("img");
     img.alt = caption || "Instagram post";
-    img.addEventListener("load", () => {
-      const { naturalWidth: w, naturalHeight: h } = img;
-      if (w > 0 && h > 0) {
-        media.style.aspectRatio = `${w} / ${h}`;
-      }
-    });
     const hasSrcset = Array.isArray(item.srcset) && item.srcset.length > 0;
     const applyImageSource = (url, useSrcset = false) => {
       if (!url) return;
